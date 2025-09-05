@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DWI</title>
+  <link rel="icon" href="Images/DWI_logo.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- <div id="navbar-container"></div>    -->
+
+  <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown-content">
+<li>
+    <a href="web_development.html">
+      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+     Web Development
+    </a>
+  </li>
+  <li>
+    <a href="app_development.html">
+      <span class="icon"><i class="fas fa-code"></i></span>
+      App Development
+    </a>
+  </li>
+  <li>
+    <a href="ui_ux-design.html">
+      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+     UI/UX Design
+    </a>
+  </li>
+    <li>
+    <a href="mvp_to_product.html">
+      <span class="icon"><i class="fas fa-lightbulb"></i></span>
+      MVP to Product
+    </a>
+  </li>
+  <li>
+    <a href="ai_machinelearning.html">
+      <span class="icon"><i class="fas fa-cube"></i></span>
+      AI & Machine Learning
+    </a>
+  </li>
+  <li>
+    <a href="hardware_iot.html">
+      <span class="icon"><i class="fas fa-microchip"></i></span>
+      Hardware & IoT Development
+    </a>
+  </li>
+  <li>
+    <a href="erp_crm_system.html">
+      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+      ERP & CRM Systems
+    </a>
+  </li>
+  <li>
+    <a href="resource_outsource.html">
+      <span class="icon"><i class="fas fa-server"></i></span>
+     Resource-Outsource
+    </a>
+  </li>
+  <li>
+    <a href="custom_doftwaredev.html">
+      <span class="icon"><i class="fas fa-rocket"></i></span>
+      Custom Software Development
+    </a>
+  </li>
+</ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+
+
+
+  <!-- Hero Section  -->
+
+  <section class="hero-section">
+    <div class="left-content">
+      <h1>
+        Your Innovation Partner<br>
+        in Design & Technology<br>
+        Expertise in <span class="highlight" id="animated-text">Web Development.</span>
+      </h1>
+      <!-- <div class="button-group">
+        <button class="black-btn">Discover ↗</button>
+      </div> -->
+      <div id="nav-part1">
+      <h4><a href="services.html">Discover ↗</a></h4>
+    </div>
+    </div>
+    <div class="right-image">
+      <img src="Services_Images/Web_development_1.jpg" alt="Banner Image" id="changing-image" />
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+
+  <section class="global-reach">
+    <div class="stats-container">
+      <div class="stat bubble light-purple from-left">
+        <h2>352+</h2>
+        <p>Project Completed</p>
+      </div>
+      <div class="stat bubble light-green from-left">
+        <h2>215+</h2>
+        <p>Customer Served</p>
+      </div>
+    </div>
+
+    <div class="center-content">
+      <h1>"<span> DW </span>Innovation Pvt. Ltd.”</h1>
+      <p>
+        Established in 2020 and
+ headquartered in Pune, Maharashtra, is a cutting
+edge IT services company dedicated to delivering
+ innovative and scalable technology solutions.
+      </p>
+    <div id="nav-part3">
+      <h4><a href="about.html">Know More ↗</a></h4>
+    </div>
+
+      <div class="globe">
+        <img src="Images/anniversary_1.JPG" alt="3D Globe"/>
+      </div>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat bubble light-green1 from-right">
+        <h2>100%</h2>
+        <p>Client Satisfaction</p>
+      </div>
+      <div class="stat bubble light-purple1 from-right">
+        <h2>5+</h2>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+<!-- Slogan Section -->
+
+  <!-- <div class="slogan-container">
+    <div class="slogan-text-container">
+      <div id="slogan-first-line" class="slogan-line">"We turn complex challenges into smart, user-friendly </div>
+      <div class="slogan-line"> applications. We design experiences, not just interfaces —</div>
+      <div class="slogan-line"> from websites to mobile apps. SEO-optimized, user</div>
+      <div class="slogan-line"> approved, and growth-ready."</div>
+    </div>
+  </div> -->
+
+
+
+<!-- Client Section -->
+
+<!-- //////////////////////////////// OUR CLIENT////////////////////////////// -->
+<!-- Include GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<section style="padding: 50px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;
+   
+background-size: cover; background-attachment: fixed; color:#333;">
+
+  <!-- Heading Centered -->
+  <div style="text-align:center; margin-bottom: 60px;">
+
+<h2 class="client-h2">Our Valuable Clients</h2>
+
+  </div>
+
+  <!-- Slider Full Width -->
+  <div style="max-width: 1400px; margin:auto; overflow:hidden; position:relative;">
+    <div class="clients-slider">
+    <img src="Images/client1.jpg" alt="Logo 1" />
+    <img src="Images/client15.jpg" alt="Logo 10" />
+    <img src="Images/client2.jpg" alt="Logo 2" />
+    <img src="Images/client3.jpg" alt="Logo 3" />
+    <img src="Images/client4.jpg" alt="Logo 4" />
+    <img src="Images/client5.jpg" alt="Logo 5" />
+    <img src="Images/client6.jpg" alt="Logo 6" />
+    <img src="Images/client7.jpg" alt="Logo 7" />
+    <img src="Images/client8.jpeg" alt="Logo 8" />
+    <img src="Images/client9.jpeg" alt="Logo 9" />
+    <img src="Images/client10.jpeg" alt="Logo 10" />
+    <img src="Images/client11.jpeg" alt="Logo 11" />
+    <img src="Images/client13.webp" alt="Logo 13" />
+    <img src="Images/client14.jpeg" alt="Logo 14" />
+    <img src="Images/client16.png" alt="Logo 16" />
+    <img src="Images/client17.jpeg" alt="Logo 17" />
+    <img src="Images/client12.png" alt="Logo 18" />
+    <img src="Images/client18.png" alt="Logo 19" />
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div style="text-align:center; margin-top:40px;">
+  <button id="viewAllBtn" class="hover-btn">
+    View All Clients ↗
+  </button>
+</div>
+
+  <!-- Hidden Grid Popup -->
+  <div id="clientsPopup" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8); z-index:9999; overflow-y:auto; padding:60px 20px;">
+    <div style="max-width:1200px; margin:auto; background:white; border-radius:12px; padding:40px; position:relative;">
+      <button id="closePopup" style="position:absolute; top:20px; right:20px; background:#444; border:none; color:white;
+        padding:5px 18px; border-radius:6px; font-family: Rajdhani, sans-serif; font-size: 18px; font-weight:bold; cursor:pointer;">Close ✕</button>
+      
+      <h3 style="text-align:center; font-family: Rajdhani, sans-serif; font-size:2rem; font-weight:700; margin-bottom:30px; color:black; margin-top: 20px;">All Clients</h3>
+      
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px;">
+    <img src="Images/client1.jpg" alt="Logo 1" />
+    <img src="Images/client15.jpg" alt="Logo 10" />
+    <img src="Images/client2.jpg" alt="Logo 2" />
+    <img src="Images/client3.jpg" alt="Logo 3" />
+    <img src="Images/client4.jpg" alt="Logo 4" />
+    <img src="Images/client5.jpg" alt="Logo 5" />
+    <img src="Images/client6.jpg" alt="Logo 6" />
+    <img src="Images/client7.jpg" alt="Logo 7" />
+    <img src="Images/client8.jpeg" alt="Logo 8" />
+    <img src="Images/client9.jpeg" alt="Logo 9" />
+    <img src="Images/client10.jpeg" alt="Logo 10" />
+    <img src="Images/client11.jpeg" alt="Logo 11" />
+    <img src="Images/client13.webp" alt="Logo 13" />
+    <img src="Images/client14.jpeg" alt="Logo 14" />
+    <img src="Images/client16.png" alt="Logo 16" />
+    <img src="Images/client17.jpeg" alt="Logo 17" />
+    <img src="Images/client12.png" alt="Logo 17" />
+    <img src="Images/client18.png" alt="Logo 19" />
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Services Section -->
+
+
+<div class="section-wrapper">
+  <div class="service-header">
+    <div class="service-text">
+      <h1>Our Expertise<br><span>We blend creativity and code to elevate your brand.</span></h1>
+    </div>
+    <div class="service-cta-button">
+      <a href="services.html">View All Services <span>↗</span></a>
+    </div>
+  </div>
+
+
+  <!-- Web Design -->
+  <div class="service-card-software branding">
+    <div class="content">
+      <!-- Title & Paragraph -->
+      <div class="text">
+        <h1>Web Development</h1>
+        <p>Get a website that looks great and drives real results. With responsive, user-friendly design, your site will engage visitors, boost conversions, and enhance your brand's online presence.</p>
+        <a href="web_development.html" class="cta-btn">Design website today ↗</a>
+      </div>
+
+      <!-- List -->
+      <div class="service-list">
+        <ul>
+          <li>Static Website</li>
+          <li>Dynamic Website</li>
+          <li>E-Commerce Website</li>
+          <li>SEO-friendly Architecture</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="image">
+        <img src="Services_Images/Web_development_4.jpg" alt="Branding Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- App Development -->
+  <div class="service-card-software uiux">
+    <div class="content">
+      <!-- Title & Paragraph -->
+      <div class="text">
+        <h1>App Development</h1>
+        <p>Native and cross-platform mobile applications that provide seamless experiences across iOS and Android devices.</p>
+        <a href="app_development.html" class="cta-btn">Start App Project ↗</a>
+      </div>
+
+      <!-- List -->
+      <div class="service-list">
+        <ul>
+          <li>Android & iOS App Development</li>
+          <li>UI/UX Design for Mobile Apps</li>
+          <li>Cross-Platform App Solutions</li>
+          <li>API Integration & Backend Support</li>
+          <li>App Testing & Maintenance</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="image">
+        <img src="Services_Images/App_Development_1.jpg" alt="Branding Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- UI/UX Design -->
+  <div class="service-card-software webdev">
+    <div class="content">
+      <!-- Title & Paragraph -->
+      <div class="text">
+        <h1>UI/UX Design</h1>
+        <p>Intuitive and visually stunning interfaces that enhance user engagement and satisfaction while reflecting your brand identity.</p>
+        <a href="ui_ux-design.html" class="cta-btn">Improve Product UX ↗</a>
+      </div>
+
+      <!-- List -->
+      <div class="service-list">
+        <ul>
+          <li>Graphic Desiging</li>
+          <li>UI/UX Design</li>
+          <li>Video Creation & Editing</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="image">
+        <img src="Services_Images/UI_UX_2.jpg" alt="Branding Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- ERP & CRM Systems -->
+  <div class="service-card-software appdev">
+    <div class="content">
+      <!-- Title & Paragraph -->
+      <div class="text">
+        <h1>ERP & CRM Systems</h1>
+        <p>Comprehensive enterprise solutions that streamline operations, enhance customer relationships, and drive business growth.</p>
+        <a href="erp_crm_system.html" class="cta-btn">Explore ERP & CRM Systems ↗</a>
+      </div>
+
+      <!-- List -->
+      <div class="service-list">
+        <ul>
+          <li>ERP Development</li>
+          <li>CRM Implementation</li>
+          <li>ERP/CRM Customization</li>
+          <li>Workflow Automation</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="image">
+        <img src="Services_Images/ERP_CRM_1.jpg" alt="Branding Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- AI & Machine Learning -->
+  <div class="service-card-software social">
+    <div class="content">
+      <!-- Title & Paragraph -->
+      <div class="text">
+        <h1>AI & Machine Learning</h1>
+        <p>Cutting-edge AI and machine learning solutions that transform your data into actionable insights, automate processes, and drive intelligent decision-making.</p>
+        <a href="ai_machinelearning.html" class="cta-btn">Explore AI Solutions ↗</a>
+      </div>
+
+      <!-- List -->
+      <div class="service-list">
+        <ul>
+          <li>AI Strategy & Consulting</li>
+          <li>Machine Learning Model Development</li>
+          <li>AI Integration with Web & Mobile Apps</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="image">
+        <img src="Services_Images/AI_ML_1.jpg" alt="Branding Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Project Section -->
+
+<section class="team-section">
+  <div class="team-header">
+    <div class="heading-text">
+      <h1>
+        "Digital Solutions, Real Success Stories."<br>
+        <span>See how our solutions drive real results.</span>
+      </h1>
+    </div>
+    <div class="cta-button">
+      <a href="clients.html">Build with us <span>↗</span></a>
+    </div>
+  </div>
+
+  <div class="scroll-container">
+    <div class="scroll-track">
+
+      <div class="team-photo"><img src="Images/project_1.jpg"><p>Riviera Foods Corporation </p></div>
+      <div class="team-photo"><img src="Images/project_2.jpg"><p>Dhruv Fabrotech</p></div>
+      <div class="team-photo"><img src="Images/project_3.jpg"><p>Adisun Solar</p></div>
+      <div class="team-photo"><img src="Images/project_4.jpg"><p>Everlast</p></div>
+      <div class="team-photo"><img src="Images/project_5.jpg"><p>SRJ Tech India Pvt. Ltd.</p></div>
+      <div class="team-photo"><img src="Images/project_6.jpg"><p>Admark Digitech Pvt. Ltd.</p></div>
+      <div class="team-photo"><img src="Images/project_7.jpg"><p>Aadi Future Systems</p></div>
+      <div class="team-photo"><img src="Images/project_8.jpg"><p>Riviera Foods Corporation</p></div>
+
+
+      <div class="team-photo"><img src="Images/project_1.jpg"><p>Riviera Foods Corporation </p></div>
+      <div class="team-photo"><img src="Images/project_2.jpg"><p>Dhruv Fabrotech</p></div>
+      <div class="team-photo"><img src="Images/project_3.jpg"><p>Adisun Solar</p></div>
+      <div class="team-photo"><img src="Images/project_4.jpg"><p>Everlast</p></div>
+      <div class="team-photo"><img src="Images/project_5.jpg"><p>SRJ Tech India Pvt. Ltd.</p></div>
+      <div class="team-photo"><img src="Images/project_6.jpg"><p>Admark Digitech Pvt. Ltd.</p></div>
+      <div class="team-photo"><img src="Images/project_7.jpg"><p>Aadi Future Systems</p></div>
+      <div class="team-photo"><img src="Images/project_8.jpg"><p>Riviera Foods Corporation</p></div>
+    </div>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+
+
+
+<!-- Career Section -->
+ 
+<!-- <section class="scroll-transition">
+  <div class="sticky-box">
+        <div class="left-img shrink-img">
+      <img src="Services_Images/Custom_SD_1.jpg" alt="Shrink Hero" />
+    </div>
+    <div class="career-right-content">
+      <p class="label">Careers</p>
+      <h1 class="career-slogan">
+        Step into a world where your creativity meets purpose, your ambition drives innovation, and your ideas shape the future.
+      </h1>
+      <p class="desc">Join a team where growth is unstoppable.</p>
+      <div id="nav-part4">
+        <h4><a href="career.html">Join us ↗</a></h4>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+
+
+
+
+<!-- Contact Section -->
+ 
+<div class="contact-container">
+    <div class="text-section">
+        <h1>Idea to Product</h1>
+        <h2>In <span style="color:#fab31a;">30-45 Days</span></h2>
+        <p>Starting up is hard, lonely and scary! We at DW INNOVATION PVT. LTD. help such daring entrepreneurs.</p>
+        <a href="contact.html" class="btn">Connect with us →</a>
+    </div>
+
+    <div class="circle-section">
+        <div class="contact-icon top">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/idea.png"/>
+        </div>
+        <div class="contact-icon bottom">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png"/>
+        </div>
+        <div>
+            <h3>30-45</h3>
+            <span>Days</span>
+        </div>
+    </div>
+</div>
+
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>
+<script src="script.js"></script>  
+</body>
+</html>

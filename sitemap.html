@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWI</title>
+    <link rel="icon" href="Images/DWI_logo.png">
+    <link rel="stylesheet" href="all_services_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+          /* Floating WhatsApp Button */
+    .whatsapp-float-button {
+      position: fixed;
+      bottom: 10px;
+      right: 22px;
+      z-index: 999;
+      text-align: center;
+    }
+
+    .whatsapp-main-btn {
+      background-color: #25d366;
+      color: white;
+      font-size: 28px;
+      padding: 12px 16px;
+      border-radius: 100%;
+      display: inline-block;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease;
+    }
+    .whatsapp-main-btn:hover {
+      background-color: #1ebd5b;
+    }
+
+    /* Options dropdown */
+    .whatsapp-options {
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .whatsapp-options a {
+      background: #25d366;
+      color: #fff;
+      padding: 8px 12px;
+      margin: 4px 0;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+    .whatsapp-options a:hover {
+      background: #1ebd5b;
+    }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<!-- <div id="navbar-container"></div>    -->
+
+  <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown-content">
+<li>
+    <a href="web_development.html">
+      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+     Web Development
+    </a>
+  </li>
+  <li>
+    <a href="app_development.html">
+      <span class="icon"><i class="fas fa-code"></i></span>
+      App Development
+    </a>
+  </li>
+  <li>
+    <a href="ui_ux-design.html">
+      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+     UI/UX Design
+    </a>
+  </li>
+    <li>
+    <a href="mvp_to_product.html">
+      <span class="icon"><i class="fas fa-lightbulb"></i></span>
+      MVP to Product
+    </a>
+  </li>
+  <li>
+    <a href="ai_machinelearning.html">
+      <span class="icon"><i class="fas fa-cube"></i></span>
+      AI & Machine Learning
+    </a>
+  </li>
+  <li>
+    <a href="hardware_iot.html">
+      <span class="icon"><i class="fas fa-microchip"></i></span>
+      Hardware & IoT Development
+    </a>
+  </li>
+  <li>
+    <a href="erp_crm_system.html">
+      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+      ERP & CRM Systems
+    </a>
+  </li>
+  <li>
+    <a href="resource_outsource.html">
+      <span class="icon"><i class="fas fa-server"></i></span>
+     Resource-Outsource
+    </a>
+  </li>
+  <li>
+    <a href="custom_doftwaredev.html">
+      <span class="icon"><i class="fas fa-rocket"></i></span>
+      Custom Software Development
+    </a>
+  </li>
+</ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+
+
+<!-- Web Development Hero Section -->
+
+
+<!-- ================= SITEMAP SECTION ================= -->
+
+<!-- ================= HORIZONTAL SITEMAP SECTION ================= -->
+<section class="sitemap" style="background:#ffffff;padding:50px 20px;font-family:'Poppins',sans-serif;color:#2C2C2C;">
+  <div style="max-width:1200px;margin:auto;">
+    
+    <!-- Title -->
+    <h2 style="text-align:center;font-family: Rajdhani, sans-serif; font-size:3.5rem;font-weight:700;margin-bottom:50px;color:black;letter-spacing:1px;position:relative;">
+      Sitemap
+      <!-- <span style="display:block;width:80px;height:4px;background:#F99E29;margin:12px auto 0;border-radius:2px;box-shadow:0 0 12px #F99E29;"></span> -->
+    </h2>
+
+    <!-- Horizontal Sitemap -->
+    <div class="sitemap-horizontal">
+      
+      <!-- Home -->
+      <div class="sitemap-item">
+        <h3>Home</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clients.html">Our Valuable Clients</a></li>
+          <li><a href="services.html">Our Expertise</a></li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Services -->
+      <div class="sitemap-item">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="web_development.html">Web Development</a></li>
+          <li><a href="app_development.html">App Development</a></li>
+          <li><a href="ui_ux-design.html">UI/UX Design</a></li>
+          <li><a href="mvp_to_product.html">MVP to Product</a></li>
+          <li><a href="ai_machinelearning.html">AI &amp; Machine Learning</a></li>
+          <li><a href="hardware_iot.html">Hardware &amp; IoT Development</a></li>
+          <li><a href="erp_crm_system.html">ERP &amp; CRM Systems</a></li>
+          <li><a href="resource_outsource.html">Resource-Outsource</a></li>
+          <li><a href="custom_doftwaredev.html">Custom Software Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- About -->
+      <div class="sitemap-item">
+        <h3>About</h3>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html">Who We Are</a></li>
+          <li><a href="about.html">Mission and Vision</a></li>
+        </ul>
+
+        <!-- Blog inside Career -->
+        <h3 style="margin-top:25px;">Blog</h3>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Career (with Blog at bottom) -->
+      <div class="sitemap-item">
+        <h3>Career</h3>
+        <ul>
+          <li><a href="career.html">Join Our Team</a></li>
+          <li><a href="career.html">Current Openings</a></li>
+        </ul>
+
+        <!-- Blog inside Career -->
+        <h3 style="margin-top:25px;">Contact</h3>
+        <ul>
+          <li><a href="contact.html">Find Location</a></li>
+          <li><a href="contact.html">Request for Services</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CSS for Styling -->
+<style>
+  .sitemap-horizontal {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+    text-align:left;
+    align-items:flex-start;
+  }
+
+  .sitemap-item {
+    flex:1 1 200px;
+    min-width:200px;
+    padding:0 20px;
+  }
+
+  .sitemap h3 {
+    color:#F99E29;
+    font-size:1.5rem;
+    margin-bottom:14px;
+    font-weight:600;
+    border-bottom:2px solid #f1f1f1;
+    padding-bottom:6px;
+    font-family: "Rajdhani", sans-serif;
+  }
+
+  .sitemap ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+
+  .sitemap li {
+    margin:8px 0;
+  }
+
+  .sitemap a {
+    color:#2C2C2C;
+    text-decoration:none;
+    font-size:1.2rem;
+    font-weight: 500;
+    transition:all 0.3s ease;
+    position:relative;
+    display:inline-block;
+    padding:4px 0;
+    font-family: "Rajdhani", sans-serif;
+  }
+
+  .sitemap a::after {
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0%;
+    height:2px;
+    background:#F99E29;
+    transition:width 0.3s ease;
+  }
+
+  .sitemap a:hover {
+    color:#F99E29;
+  }
+
+  .sitemap a:hover::after {
+    width:100%;
+  }
+
+  /* Divider styling */
+  .divider {
+    width:2px;
+    background:#eaeaea;
+    min-height:200px;
+    align-self:stretch;
+  }
+
+  @media(max-width:768px){
+    .sitemap-horizontal {
+      flex-direction:column;
+    }
+    .divider {
+      display:none;
+    }
+  }
+</style>
+
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>
+</body>
+</html>

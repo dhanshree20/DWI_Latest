@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DWI</title>
+  <link rel="icon" href="Images/DWI_logo.png">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- <div id="navbar-container"></div> -->
+
+  <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown-content">
+<li>
+    <a href="web_development.html">
+      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+     Web Development
+    </a>
+  </li>
+  <li>
+    <a href="app_development.html">
+      <span class="icon"><i class="fas fa-code"></i></span>
+      App Development
+    </a>
+  </li>
+  <li>
+    <a href="ui_ux-design.html">
+      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+     UI/UX Design
+    </a>
+  </li>
+    <li>
+    <a href="mvp_to_product.html">
+      <span class="icon"><i class="fas fa-lightbulb"></i></span>
+      MVP to Product
+    </a>
+  </li>
+  <li>
+    <a href="ai_machinelearning.html">
+      <span class="icon"><i class="fas fa-cube"></i></span>
+      AI & Machine Learning
+    </a>
+  </li>
+  <li>
+    <a href="hardware_iot.html">
+      <span class="icon"><i class="fas fa-microchip"></i></span>
+      Hardware & IoT Development
+    </a>
+  </li>
+  <li>
+    <a href="erp_crm_system.html">
+      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+      ERP & CRM Systems
+    </a>
+  </li>
+  <li>
+    <a href="resource_outsource.html">
+      <span class="icon"><i class="fas fa-server"></i></span>
+     Resource-Outsource
+    </a>
+  </li>
+  <li>
+    <a href="custom_doftwaredev.html">
+      <span class="icon"><i class="fas fa-rocket"></i></span>
+      Custom Software Development
+    </a>
+  </li>
+</ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+    
+
+  <!-- Services Hero Section -->
+
+  <div class="heading">
+    <h1>
+      “Smart Solutions for a Digital Future.”<br>
+      <span class="light-gray">Comprehensive digital solutions to transform your ideas into reality with cutting-edge
+        technology and expert craftsmanship.</span>
+    </h1>
+  </div>
+
+
+  <!-- Client Slider Section -->
+
+  <section class="trusted-slider-section">
+    <!-- <h2 class="trusted-heading">Trusted by 500+ global companies</h2> -->
+
+    <div class="slider">
+      <div class="slider-track">
+        <!-- Duplicate logos for infinite loop effect -->
+        <img src="Images/client1.jpg" alt="Logo 1" />
+        <img src="Images/client2.jpg" alt="Logo 2" />
+        <img src="Images/client3.jpg" alt="Logo 3" />
+        <img src="Images/client4.jpg" alt="Logo 4" />
+        <img src="Images/client5.jpg" alt="Logo 5" />
+        <img src="Images/client6.jpg" alt="Logo 6" />
+        <img src="Images/client7.jpg" alt="Logo 7" />
+        <img src="Images/client8.jpeg" alt="Logo 8" />
+        <img src="Images/client9.jpeg" alt="Logo 8" />
+        <img src="Images/client10.jpeg" alt="Logo 8" />
+        <img src="Images/client11.jpeg" alt="Logo 8" />
+        <img src="Images/client13.webp" alt="Logo 8" />
+        <img src="Images/client14.jpeg" alt="Logo 8" />
+        <img src="Images/client15.jpg" alt="Logo 8" />
+        <img src="Images/client16.png" alt="logo" />
+        <img src="Images/client17.jpeg" alt="logo" />
+
+        <!-- Repeat again for smooth infinite loop -->
+        <img src="Images/client1.jpg" alt="Logo 1" />
+        <img src="Images/client2.jpg" alt="Logo 2" />
+        <img src="Images/client3.jpg" alt="Logo 3" />
+        <img src="Images/client4.jpg" alt="Logo 4" />
+        <img src="Images/client5.jpg" alt="Logo 5" />
+        <img src="Images/client6.jpg" alt="Logo 6" />
+        <img src="Images/client7.jpg" alt="Logo 7" />
+        <img src="Images/client8.jpeg" alt="Logo 8" />
+        <img src="Images/client9.jpeg" alt="Logo 8" />
+        <img src="Images/client10.jpeg" alt="Logo 8" />
+        <img src="Images/client11.jpeg" alt="Logo 8" />
+        <img src="Images/client13.webp" alt="Logo 8" />
+        <img src="Images/client14.jpeg" alt="Logo 8" />
+        <img src="Images/client15.jpg" alt="Logo 8" />
+        <img src="Images/client16.png" alt="logo" />
+        <img src="Images/client17.jpeg" alt="logo" />
+        <img src="Images/client12.png" alt="logo" />
+        <img src="Images/client18.png" alt="logo" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+
+  <!-- Service 1 -->
+  <section id="web-development" class="web-design-section">
+    <div class="left-content">
+      <h2>Web Development</h2>
+      <p>
+        Custom web solutions built with cutting-edge technologies to create responsive, high-performance websites that
+        deliver exceptional user experiences. We create responsive, high-performance websites and web applications that
+        deliver exceptional user experiences. 
+      </p>
+      <ui>
+        <li>Web Design</li>
+        <li>SaaS Design</li>
+        <li>Product Design</li>
+        <li>B2B Website Design</li>
+        <li>Landing Page Design</li>
+        <li>E-commerce Design</li>
+        <li>Startup Web Design</li>
+      </ui>
+
+
+      <button class="client-button" data-target="#web-dev-img">Our Client Project</button>
+    </div>
+
+    <div class="right-image">
+      <img src="Services_Images/home_web.jpeg" alt="Web Design Example">
+    </div>
+  </section>
+
+
+  <!-- Service 2 -->
+
+  <section id="uiux-design" class="uiux-section">
+    <div class="left-image">
+      <img src="Services_Images/home_app.jpeg" alt="UI UX Design Mockup">
+    </div>
+
+    <div class="right-content">
+      <h2>App Development</h2>
+      <p>
+        Native and cross-platform mobile applications that provide seamless experiences across iOS and Android
+        devices.We design and develop mobile applications that provide seamless experiences across iOS and Android
+        devices. 
+      </p>
+
+      <ui>
+        <li>Mobile App Design</li>
+        <li>Design System</li>
+        <li>iOS App Design</li>
+        <li>Android App Design</li>
+        <li>UX Design</li>
+        <li>UI Design</li>
+        <li>Usability Testing</li>
+      </ui>
+
+      <button class="client-button" data-target="#uiux-img">Our Client Project</button>
+    </div>
+  </section>
+
+
+  <!-- Service 3 -->
+  <section id="app-development" class="web-design-section">
+    <div class="left-content">
+      <h2>UI/UX Design</h2>
+      <p>
+        Intuitive and visually stunning interfaces that enhance user engagement and satisfaction while reflecting your
+        brand identity. We create intuitive, visually appealing, and user-centered designs that enhance user
+        satisfaction and drive engagement. Our UI/UX design process focuses on understanding user needs, creating
+        seamless interactions, and delivering memorable experiences that align with your brand identity. 
+      </p>
+      <ui>
+        <li>UI UX Design</li>
+        <li>UI UX Consulting</li>
+        <li>UX Research</li>
+        <li>usability Testing</li>
+        <li>Wireframe & UI Prototyping</li>
+      </ui>
+
+      <button class="client-button" data-target="#app-dev-img">Our Client Project</button>
+    </div>
+
+    <div class="right-image">
+      <img src="Services_Images/home_uiux.jpeg" alt="Web Design Example">
+    </div>
+  </section>
+
+
+<!-- Service 4 -->
+
+  <section id="uiux-design" class="uiux-section">
+    <div class="left-image">
+      <img src="Services_Images/home_mvp.jpeg" alt="UI UX Design Mockup">
+    </div>
+
+    <div class="right-content">
+      <h2>MVP to Product</h2>
+      <p>
+        We help you turn your MVP into a polished, scalable, and revenue-generating product. Our process includes analyzing user feedback, enhancing the user experience, optimizing performance, and adding advanced features to meet market demands. Whether you’re a startup looking to secure funding or an established business aiming to launch a new product, we make sure your vision becomes a reality. 
+      </p>
+
+      <ui>
+        <li>Product Strategy & Roadmap</li>
+        <li>Feature Enhancement</li>
+        <li>Scalability & Performance Optimization</li>
+        <li>UI/UX Improvements</li>
+        <li>Integration with Third-Party Services</li>
+        <li>Quality Assurance & Testing</li>
+        <li>Post-Launch Support & Maintenance</li>
+      </ui>
+
+      <button class="client-button" data-target="#uiux-img">Our Client Project</button>
+    </div>
+  </section>
+
+
+  <!-- Service 5 -->
+  <section id="ai-ml" class="web-design-section">
+    <div class="left-content">
+      <h2>AI & Machine Learning</h2>
+      <p>
+        Cutting-edge AI and machine learning solutions that transform your data into actionable insights, automate
+        processes, and drive intelligent decision-making. We leverage the power of artificial intelligence and machine
+        learning to transform your data into actionable insights, automate processes, and drive intelligent
+        decision-making. Our AI solutions help businesses optimize operations, enhance customer experiences, and gain
+        competitive advantages in the digital landscape.
+      </p>
+
+      <ul>
+        <li>AI Agent</li>
+        <li>AI Recommendations</li>
+        <li>AI Chatbot Development</li>
+
+      </ul>
+
+      <button class="client-button" data-target="#aiml-img">Our Client Project</button>
+    </div>
+
+    <div class="right-image">
+      <img src="Services_Images/home_aiml.jpeg" alt="Web Design Example">
+    </div>
+  </section>
+
+
+  <!-- Service 6 -->
+
+  <section id="hardware-iot" class="uiux-section">
+    <div class="left-image">
+      <img src="Services_Images/home_iot.jpeg" alt="UI UX Design Mockup">
+    </div>
+
+    <div class="right-content">
+      <h2>Hardware & IoT Development</h2>
+      <p>
+        Hardware & IoT Development – We design and develop innovative IoT devices and hardware solutions that seamlessly
+        connect the physical and digital worlds. From embedded systems and sensor integration to real-time monitoring
+        and industrial IoT applications, we deliver smart, scalable, and reliable technology that empowers businesses to
+        operate more efficiently and intelligently.
+      </p>
+
+      <ul>
+        <li>IoT Device Design</li>
+        <li>Embedded Systems Development</li>
+        <li>Sensor Integration</li>
+        <li>Industrial IoT Solutions</li>
+        <li>IoT App Development</li>
+        <li>Hardware Prototyping</li>
+
+      </ul>
+
+      <button class="client-button" data-target="#iot-img">Our Client Project</button>
+    </div>
+  </section>
+
+
+  <!-- Service 7 -->
+  <section id="resource-outsource" class="web-design-section">
+    <div class="left-content">
+      <h2>ERP & CRM Systems</h2>
+      <p>
+        Comprehensive enterprise solutions that streamline operations, enhance customer relationships, and drive
+        business growth.We implement and customize ERP and CRM systems that help businesses streamline operations,
+        improve customer relationships, and make data-driven decisions.
+      </p>
+
+      <ul>
+        <li>ERP System Design</li>
+        <li>CRM System Design</li>
+        <li>Business Process Automation</li>
+        <li>Custom Module Development</li>
+        <li>Data Migration & Integration</li>
+        <li>Role-based Access Control</li>
+        <li>Reporting & Analytics</li>
+      </ul>
+
+      <button class="client-button" data-target="#erpcrm-img">Our Client Project</button>
+    </div>
+
+    <div class="right-image">
+      <img src="Services_Images/home_erp_crm.jpeg" alt="Web Design Example">
+    </div>
+  </section>
+
+
+  <!-- Service 8 -->
+
+  <section id="custom-sd" class="uiux-section">
+    <div class="left-image">
+      <img src="Services_Images/home_resource_outsource.jpeg" alt="UI UX Design Mockup">
+    </div>
+
+    <div class="right-content">
+      <h2>Resource-Outsource</h2>
+      <p>
+        Flexible resource outsourcing solutions that provide skilled professionals to augment your team and accelerate
+        project delivery.
+      </p>
+      <p>Our resource outsourcing services provide you with access to skilled
+        professionals across various technology domains without the overhead of
+        full-time hiring.</p>
+
+      <ul>
+        <li> Native-like performance across all platforms</li>
+        <li> Intuitive user interfaces that follow platform guidelines</li>
+        <li> Offline functionality for uninterrupted user experience</li>
+        <li> Push notifications to engage with users</li>
+        <li> Secure data storage and transmission</li>
+        <li> Integration with device features (camera, GPS, etc.)</li>
+        <li> Analytics to track user behavior and app performance</li>
+        <li> Regular updates and feature enhancements</li>
+
+      </ul>
+
+      <!-- <button class="client-button">Our Client Project</button> -->
+    </div>
+  </section>
+
+
+  <!-- Service 9 -->
+  <section id="resource-outsource" class="web-design-section">
+    <div class="left-content">
+      <h2>Custom Software Development</h2>
+      <p>
+         Tailored software solutions designed to meet your unique business requirements, streamline operations, and drive
+        innovation.We develop custom software solutions designed to meet your specific business requirements, streamline
+        operations, and drive innovation.
+      </p>
+
+      <ul>
+        <li>Tailored Software Solutions</li>
+        <li>Enterprise Application Development</li>
+        <li>Cross-platform Software</li>
+        <li>API Development & Integration</li>
+        <li>Performance Optimization</li>
+        <li>Software Maintenance & Support</li>
+      </ul>
+
+      <button class="client-button" data-target="#customsd-img">Our Client Project</button>
+    </div>
+
+    <div class="right-image">
+      <img src="Services_Images/home_custom_sd.jpeg" alt="Web Design Example">
+    </div>
+  </section>
+
+
+
+  <!-- Image Section -->
+
+
+  <section class="project-grid">
+    <div class="project-card" id="web-dev-img">
+      <img src="Images/Dhruv_Fabrotech.png" alt="Web Development" />
+      <div class="overlay">
+        <h3>Web Development</h3>
+      </div>
+    </div>
+
+    <div class="project-card" id="app-dev-img">
+      <img src="Project_Images/lgm.jpeg" alt="App Development" />
+      <div class="overlay">
+        <h3>App Development</h3>
+      </div>
+    </div>
+
+    <div class="project-card" id="uiux-img">
+      <img src="Project_Images/SwamiSamrth.png" alt="UI/UX Design" />
+      <div class="overlay">
+        <h3>UI/UX Design</h3>
+      </div>
+    </div>
+
+
+    <div class="project-card" id="mvp-img">
+      <img src="Project_Images/Meghrup.png" alt="App Development" />
+      <div class="overlay">
+        <h3>MVP to Product</h3>
+      </div>
+    </div>
+
+    <div class="project-card" id="aiml-img">
+      <img src="Project_Images/aiagent.jpeg" alt="App Development" />
+      <div class="overlay">
+        <h3>AI & Machine Learning</h3>
+      </div>
+    </div>
+
+        <div class="project-card" id="iot-img">
+      <img src="Project_Images/lgm_hardware_1.jpeg" alt="App Development" />
+      <div class="overlay">
+        <h3>Hardware & IoT Development</h3>
+      </div>
+    </div>
+
+        <div class="project-card" id="erpcrm-img">
+      <img src="Project_Images/erpcrm.jpeg" alt="App Development" />
+      <div class="overlay">
+        <h3>ERP & CRM Systems</h3>
+      </div>
+    </div>
+
+    <div class="project-card" id="customsd-img">
+      <img src="Project_Images/Inventory_management.jpeg" alt="App Development" />
+      <div class="overlay">
+        <h3>Custom Software Development</h3>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script>
+
+
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+  <script src="services.js"></script>
+</body>
+
+</html>

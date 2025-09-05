@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DWI</title>
+  <link rel="icon" href="Images/DWI_logo.png">
+  <link rel="stylesheet" href="all_career_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- <div id="navbar-container"></div> -->
+
+  <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown-content">
+<li>
+    <a href="web_development.html">
+      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+     Web Development
+    </a>
+  </li>
+  <li>
+    <a href="app_development.html">
+      <span class="icon"><i class="fas fa-code"></i></span>
+      App Development
+    </a>
+  </li>
+  <li>
+    <a href="ui_ux-design.html">
+      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+     UI/UX Design
+    </a>
+  </li>
+    <li>
+    <a href="mvp_to_product.html">
+      <span class="icon"><i class="fas fa-lightbulb"></i></span>
+      MVP to Product
+    </a>
+  </li>
+  <li>
+    <a href="ai_machinelearning.html">
+      <span class="icon"><i class="fas fa-cube"></i></span>
+      AI & Machine Learning
+    </a>
+  </li>
+  <li>
+    <a href="hardware_iot.html">
+      <span class="icon"><i class="fas fa-microchip"></i></span>
+      Hardware & IoT Development
+    </a>
+  </li>
+  <li>
+    <a href="erp_crm_system.html">
+      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+      ERP & CRM Systems
+    </a>
+  </li>
+  <li>
+    <a href="resource_outsource.html">
+      <span class="icon"><i class="fas fa-server"></i></span>
+     Resource-Outsource
+    </a>
+  </li>
+  <li>
+    <a href="custom_doftwaredev.html">
+      <span class="icon"><i class="fas fa-rocket"></i></span>
+      Custom Software Development
+    </a>
+  </li>
+</ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+
+
+
+<!-- Why Section -->
+
+<div class="container">
+    <h1>Why Join <span class="highlight">DW Innovation?</span></h1>
+    <ul class="benefits-list">
+      <li>Get hands-on experience with projects in Web Development, App Development, UI/UX Design, Digital Marketing, AI/ML, and ERP/CRM systems—spanning multiple industries and technologies.</li>
+      <li>
+        Explore next-gen technologies like Artificial Intelligence, Machine Learning, and scalable enterprise systems.
+      </li>
+      <li>
+        At DW Innovation, every voice is heard. We believe in transparent communication, mutual respect, and empowering each individual to bring innovative ideas to the table.
+      </li>
+      <li>
+        We promote a balanced lifestyle with flexible work hours, remote options, and a supportive ecosystem for productivity and creativity.
+      </li>
+    </ul>
+  </div>  
+
+<!-- Career Description Section -->
+
+
+  <div class="container">
+
+    <div class="accordion">
+
+      <!-- 1 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Social Media Intern<span class="symbol">+</span></button>
+        <div class="accordion-content">
+          <!-- Social Media Intern -->
+          <div class="job-card">
+            <div class="icon-title">
+              <h2>Social Media Intern</h2>
+            </div>
+            <p class="description">
+              Join our team as a Social Media Intern to support content creation, engagement, and growth across various
+              social media platforms.
+            </p>
+            <h3 class="section-title">Responsibilities</h3>
+            <ul class="list">
+              <li>Assist in developing and scheduling engaging social media posts</li>
+              <li>Research trends and suggest creative ideas for content</li>
+              <li> Monitor social media channels and interact with followers</li>
+              <li> Track performance metrics and prepare basic reports</li>
+            </ul>
+            <h3 class="section-title">Requirements</h3>
+            <ul class="list">
+              <li>0-1 years of experience</li>
+              <li>Basic understanding of platforms like Instagram, Facebook, LinkedIn, Twitter, etc.</li>
+              <li>Familiarity with tools like Canva, Buffer, Hootsuite, or similar</li>
+              <li>Strong written communication and creativity</li>
+              <li>Passion for social media and digital marketing</li>
+              <li>Pursuing or recently completed a Bachelor's degree in Marketing, Mass Communication, or related field
+              </li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaZv7OARva5YOncB2-GLlakhg6V7BXNQV-qpva-diheoTyfg/viewform?usp=header" class="apply-btn" target="_blank">Apply Now →</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion-item">
+        <button class="accordion-header">Graphic Desiging & Video Editing Intern<span class="symbol">+</span></button>
+        <div class="accordion-content">
+
+          <!-- Graphic Desiging & Video Editing Intern -->
+          <div class="job-card">
+            <div class="icon-title">
+              <h2>Graphic Desiging & Video Editing Intern</h2>
+            </div>
+            <p class="description">
+              Join our team as a Graphic Designing & Video Editing Intern to bring creative concepts to life through
+              visually engaging designs and video content for digital platforms.
+            </p>
+            <h3 class="section-title">Responsibilities</h3>
+            <ul class="list">
+              <li>Create visually appealing graphics for social media, websites, and marketing materials</li>
+              <li>Edit and produce engaging video content for campaigns, reels, and promotions</li>
+              <li> Collaborate with the content and marketing team to understand project requirements</li>
+              <li>Maintain brand consistency across all visual content</li>
+            </ul>
+            <h3 class="section-title">Requirements</h3>
+            <ul class="list">
+              <li>0-1 years of social media management experience</li>
+              <li>Proficiency in Adobe Creative Suite (Photoshop, Illustrator, Premiere Pro, After Effects, etc.) or
+                similar tools</li>
+              <li>Basic knowledge of design principles, typography, and color theory</li>
+              <li>Understanding of video editing techniques and storytelling</li>
+              <li>Pursuing or recently completed a degree/diploma in Graphic Design, Multimedia, or related field</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaZv7OARva5YOncB2-GLlakhg6V7BXNQV-qpva-diheoTyfg/viewform?usp=header" class="apply-btn" target="_blank">Apply Now →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="accordion-item"></div>
+  </div>
+  </div>
+
+
+
+
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const symbol = header.querySelector('.symbol');
+
+        const isOpen = content.classList.contains('open');
+
+        // Close all others
+        document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+
+        // Toggle current
+        if (!isOpen) {
+          content.classList.add('open');
+          header.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+</body>
+
+</html>

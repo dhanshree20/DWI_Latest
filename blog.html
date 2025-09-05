@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DWI</title>
+  <link rel="icon" href="Images/DWI_logo.png">
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- <div id="navbar-container"></div> -->
+
+  <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown-content">
+<li>
+    <a href="web_development.html">
+      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+     Web Development
+    </a>
+  </li>
+  <li>
+    <a href="app_development.html">
+      <span class="icon"><i class="fas fa-code"></i></span>
+      App Development
+    </a>
+  </li>
+  <li>
+    <a href="ui_ux-design.html">
+      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+     UI/UX Design
+    </a>
+  </li>
+    <li>
+    <a href="mvp_to_product.html">
+      <span class="icon"><i class="fas fa-lightbulb"></i></span>
+      MVP to Product
+    </a>
+  </li>
+  <li>
+    <a href="ai_machinelearning.html">
+      <span class="icon"><i class="fas fa-cube"></i></span>
+      AI & Machine Learning
+    </a>
+  </li>
+  <li>
+    <a href="hardware_iot.html">
+      <span class="icon"><i class="fas fa-microchip"></i></span>
+      Hardware & IoT Development
+    </a>
+  </li>
+  <li>
+    <a href="erp_crm_system.html">
+      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+      ERP & CRM Systems
+    </a>
+  </li>
+  <li>
+    <a href="resource_outsource.html">
+      <span class="icon"><i class="fas fa-server"></i></span>
+     Resource-Outsource
+    </a>
+  </li>
+  <li>
+    <a href="custom_doftwaredev.html">
+      <span class="icon"><i class="fas fa-rocket"></i></span>
+      Custom Software Development
+    </a>
+  </li>
+</ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+
+
+
+  <!-- Blog Hero Section -->
+
+  <div class="heading">
+    <h1>
+      "Insights That Inspire Innovation."<br>
+      <span class="light-gray">Explore trends, tips, and thought leadership in tech, design, and digital growth.</span>
+    </h1>
+  </div>
+
+
+  <!-- Blog Section -->
+
+
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Services_Images/AI_ML_2.jpg" alt="AI Analytics">
+        <span class="tag blue">AI & Analytics</span>
+      </div>
+      <div class="card-content">
+        <p class="date">June 15, 2024 • 5 min read</p>
+        <h3>The Future of AI in Data Analytics</h3>
+        <p class="description">Discover how AI is transforming data analytics with automated insights and predictive...
+        </p>
+        <!-- Toggle Button -->
+        <a href="#" class="toggle-details">Read More <span>→</span></a>
+
+        <!-- Hidden Extra Content -->
+        <div class="extra-content" style="display: none;">
+          <h4>Key Points:</h4>
+          <ul>
+            <li>Automated data processing and cleaning</li>
+            <li>Predictive analytics and forecasting</li>
+            <li>Natural language processing for unstructured data</li>
+            <li>Real-time data analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Services_Images/AI_ML_1.jpg" alt="Quantum Computing">
+        <span class="tag purple">Emerging Tech</span>
+      </div>
+      <div class="card-content">
+        <p class="date">June 10, 2024 • 7 min read</p>
+        <h3>Quantum Computing: The Next Frontier</h3>
+        <p class="description">Exploring how quantum computing will revolutionize data processing and security.</p>
+                <!-- Toggle Button -->
+        <a href="#" class="toggle-details">Read More <span>→</span></a>
+
+        <!-- Hidden Extra Content -->
+        <div class="extra-content" style="display: none;">
+          <h4>Key Points:</h4>
+          <ul>
+            <li>Quantum bits (qubits) vs classical bits</li>
+            <li>Potential applications in cryptography</li>
+            <li>Challenges in quantum computing</li>
+            <li>Current state of quantum technology</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Images/blog3.jpg" alt="Cybersecurity AI">
+        <span class="tag dark-blue">Security</span>
+      </div>
+      <div class="card-content">
+        <p class="date">June 5, 2024 • 6 min read</p>
+        <h3>Cybersecurity in the Age of AI</h3>
+        <p class="description">How AI is both a threat and a solution in modern cybersecurity strategies.</p>
+                <!-- Toggle Button -->
+        <a href="#" class="toggle-details">Read More <span>→</span></a>
+
+        <!-- Hidden Extra Content -->
+        <div class="extra-content" style="display: none;">
+          <h4>Key Points:</h4>
+          <ul>
+            <li>AI-powered threat detection</li>
+            <li>Automated vulnerability assessment</li>
+            <li>AI in phishing detection</li>
+            <li>Ethical considerations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Services_Images/Web_development_3.jpg" alt="Cybersecurity AI">
+        <span class="tag dark-blue">Development</span>
+      </div>
+      <div class="card-content">
+        <p class="date">May 28, 2024 • 4 min read</p>
+        <h3>The Rise of Low-Code Development</h3>
+        <p class="description">How low-code platforms are enabling faster application development and deployment.</p>
+                <!-- Toggle Button -->
+        <a href="#" class="toggle-details">Read More <span>→</span></a>
+
+        <!-- Hidden Extra Content -->
+        <div class="extra-content" style="display: none;">
+          <h4>Key Points:</h4>
+          <ul>
+            <li>What is low-code development?</li>
+            <li>Benefits for rapid prototyping</li>
+            <li>Use cases across industries</li>
+            <li>Limitations and when to use traditional coding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Services_Images/IOT_2.jpg" alt="Cybersecurity AI">
+        <span class="tag dark-blue">AI & IoT</span>
+      </div>
+      <div class="card-content">
+        <p class="date">May 20, 2024 • 5 min read</p>
+        <h3>Edge AI: Bringing Intelligence to the Edge</h3>
+        <p class="description">Exploring how edge computing is making AI faster and more accessible.</p>
+                <!-- Toggle Button -->
+        <a href="#" class="toggle-details">Read More <span>→</span></a>
+
+        <!-- Hidden Extra Content -->
+        <div class="extra-content" style="display: none;">
+          <h4>Key Points:</h4>
+          <ul>
+            <li>Edge vs cloud computing</li>
+            <li>Reduced latency benefits</li>
+            <li>Privacy and security advantages</li>
+            <li>Real-world applications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.querySelectorAll(".toggle-details").forEach(button => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const extraContent = this.nextElementSibling;
+
+        if (extraContent.style.display === "none" || extraContent.style.display === "") {
+          extraContent.style.display = "block";
+          this.innerHTML = "Hide Details <span>↑</span>";
+        } else {
+          extraContent.style.display = "none";
+          this.innerHTML = "Read More <span>→</span>";
+        }
+      });
+    });
+  </script>
+
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script>
+
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+</body>
+
+</html>

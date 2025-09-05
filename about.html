@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DWI</title>
+  <link rel="icon" href="Images/DWI_logo.png">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- <div id="navbar-container"></div> -->
+
+    <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown-content">
+  <li>
+    <a href="web_development.html">
+      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+     Web Development
+    </a>
+  </li>
+  <li>
+    <a href="app_development.html">
+      <span class="icon"><i class="fas fa-code"></i></span>
+      App Development
+    </a>
+  </li>
+  <li>
+    <a href="ui_ux-design.html">
+      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+     UI/UX Design
+    </a>
+  </li>
+    <li>
+    <a href="mvp_to_product.html">
+      <span class="icon"><i class="fas fa-lightbulb"></i></span>
+      MVP to Product
+    </a>
+  </li>
+  <li>
+    <a href="ai_machinelearning.html">
+      <span class="icon"><i class="fas fa-cube"></i></span>
+      AI & Machine Learning
+    </a>
+  </li>
+  <li>
+    <a href="hardware_iot.html">
+      <span class="icon"><i class="fas fa-microchip"></i></span>
+      Hardware & IoT Development
+    </a>
+  </li>
+  <li>
+    <a href="erp_crm_system.html">
+      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+      ERP & CRM Systems
+    </a>
+  </li>
+  <li>
+    <a href="resource_outsource.html">
+      <span class="icon"><i class="fas fa-server"></i></span>
+     Resource-Outsource
+    </a>
+  </li>
+  <li>
+    <a href="custom_doftwaredev.html">
+      <span class="icon"><i class="fas fa-rocket"></i></span>
+      Custom Software Development
+    </a>
+  </li>
+</ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+
+
+
+
+
+  <!-- About Hero Section -->
+
+<section class="about-section">
+  <div class="left-image-container">
+    <img src="Images/open_mic_1.JPG" alt="Team Image" id="slider-image" />
+    <div class="carousel-dots" id="carousel-dots"></div>
+  </div>
+
+  <div class="right-content">
+    <h2>About <br />DW Innovation</h2>
+    <div class="underline"></div>
+    <p id="slider-text">
+      An evening of creativity, expression, and talent — our Open Mic event gave a platform for voices to be heard and
+      stories to be shared.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Our Story Section -->
+
+
+
+  <section class="our-story-section">
+    <div class="about-container">
+      <h2 class="title">Our Story</h2>
+      <p class="paragraph">
+        DW INNOVATION PVT. LTD. was founded by a team of forward-thinking entrepreneurs who recognized the need for
+        reliable, high-impact development services. Driven by a culture of creativity, precision, and passion, we
+        transform ideas into exceptional digital experiences.
+      </p>
+      <p class="paragraph">
+        Today, we are a trusted global tech partner—delivering top-tier web and mobile development, custom product
+        solutions, and scalable digital platforms. Our commitment to quality and client success has made us a standout
+        name in the technology space.
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- Section -->
+
+  <div class="container">
+    <h1>Empowering Through Action</h1>
+    <p class="intro">
+      We believe that progress is only meaningful when it benefits everyone. That’s why we take action with
+      intention—supporting people, advancing sustainability, and giving back to the communities we call home.
+    </p>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">Who We Are <span class="symbol">+</span></button>
+        <div class="accordion-content">
+          <!-- who we are -->
+
+          <div class="timeline-container">
+            <div class="timeline">
+
+              <!-- 2021 Section -->
+              <div class="timeline-item left">
+                <div class="circle">2021</div>
+                <div class="content1">
+                  <h2>Foundation</h2>
+                  <p>
+                    It all started with a vision and a small team of passionate developers. DW Innovation was founded
+                    with the ambition to transform digital experiences and create innovative solutions.
+                  </p>
+                </div>
+                <div class="image-box">
+                  <img src="Images/anniversary_1.JPG" alt="Our Beginning">
+                </div>
+              </div>
+
+              <!-- 2022 Section -->
+              <div class="timeline-item right">
+                <div class="circle purple">2022</div>
+                <div class="content">
+                  <h2>Growth & Expansion</h2>
+                  <p>Our team doubled in size as we expanded our service offerings to include Mobile App Development and
+                    UI/UX design. We established our first international partnerships and began building our reputation.
+                  </p>
+                </div>
+                <div class="image-box">
+                  <img src="Images/anniversary_2.JPG" alt="Expanding Our Reach">
+                </div>
+              </div>
+
+              <!-- 2023 Section -->
+              <div class="timeline-item left">
+                <div class="circle">2023</div>
+                <div class="content1">
+                  <h2>Innovation Hub</h2>
+                  <p>
+                    We launched our innovation lab focused on emerging technologies. Our team began developing custom
+                    solutions for enterprise clients and expanded our global footprint with new offices.
+                  </p>
+                </div>
+                <div class="image-box">
+                  <img src="Images/open_mic_2.JPG" alt="Our Beginning">
+                </div>
+              </div>
+
+              <!-- 2024 Section -->
+              <div class="timeline-item right">
+                <div class="circle purple">2024</div>
+                <div class="content">
+                  <h2>Industry Recognition</h2>
+                  <p>Our team established strategic
+                    partnerships with leading technology providers and expanded our service portfolio to meet growing
+                    client demands.</p>
+                </div>
+                <div class="image-box">
+                  <img src="Images/open_mic_1.JPG" alt="Expanding Our Reach">
+                </div>
+              </div>
+
+              <!-- 2025 Section -->
+              <div class="timeline-item left">
+                <div class="circle">2025</div>
+                <div class="content1">
+                  <h2>Global Impact</h2>
+                  <p>Today, DW Innovation stands as a global leader in digital transformation. With offices across three
+                    continents and a diverse team of over 100 experts, we continue to push the boundaries of what's
+                    possible in the digital realm.</p>
+                </div>
+                <div class="image-box">
+                  <img src="Images/cricket_2.JPG" alt="Our Beginning">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Mission & Vision <span class="symbol">+</span></button>
+        <div class="accordion-content">
+
+          <!-- mission & vision -->
+          <div class="mv-container">
+            <div class="mv-row">
+              <div class="mv-label">Our Mission</div>
+              <div class="mv-text">
+                DW = Dream Work <br />
+                At DW Innovation, we're committed to turning dreams into work and work into reality. We strive to
+                deliver innovative digital solutions that empower businesses to achieve their full potential in the
+                digital landscape, while maintaining the highest standards of quality and client satisfaction.
+              </div>
+            </div>
+
+            <hr class="mv-divider" />
+
+            <div class="mv-row">
+              <div class="mv-label">Our Vision</div>
+              <div class="mv-text">
+                Bringing Ideas into Reality <br />
+                We envision a world where technology seamlessly bridges the gap between imagination and implementation.
+                Our goal is to be the catalyst that transforms bold ideas into tangible digital realities, creating
+                solutions that not only meet current needs but anticipate future challenges.
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="accordion-item"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Box Section -->
+
+  <section class="team-section">
+    <div class="container">
+
+      <h1 class="main-title">
+        "Experience. Excellence. Every Time." <br />
+        <span class="light-gray">Quality digital solutions. Client satisfaction.</span>
+      </h1>
+
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <h2 class="card-title">352+</h2>
+          <p class="card-desc">Projects Completed</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <h2 class="card-title">100%</h2>
+          <p class="card-desc">Client Satisfaction</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <h2 class="card-title">5+</h2>
+          <p class="card-desc">Years Experience</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <h2 class="card-title">215+</h2>
+          <p class="card-desc">Customer Served</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script>
+
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+  <script src="about.js"></script>
+</body>
+
+</html>

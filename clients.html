@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DWI</title>
+  <link rel="icon" href="Images/DWI_logo.png">
+  <link rel="stylesheet" href="clients.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- <div id="navbar-container"></div>    -->
+
+  <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li>
+              <a href="web_development.html">
+                <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+                Web Development
+              </a>
+            </li>
+            <li>
+              <a href="app_development.html">
+                <span class="icon"><i class="fas fa-code"></i></span>
+                App Development
+              </a>
+            </li>
+            <li>
+              <a href="ui_ux-design.html">
+                <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                UI/UX Design
+              </a>
+            </li>
+            <li>
+              <a href="mvp_to_product.html">
+                <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                MVP to Product
+              </a>
+            </li>
+            <li>
+              <a href="ai_machinelearning.html">
+                <span class="icon"><i class="fas fa-cube"></i></span>
+                AI & Machine Learning
+              </a>
+            </li>
+            <li>
+              <a href="hardware_iot.html">
+                <span class="icon"><i class="fas fa-microchip"></i></span>
+                Hardware & IoT Development
+              </a>
+            </li>
+            <li>
+              <a href="erp_crm_system.html">
+                <span class="icon"><i class="fas fa-project-diagram"></i></span>
+                ERP & CRM Systems
+              </a>
+            </li>
+            <li>
+              <a href="resource_outsource.html">
+                <span class="icon"><i class="fas fa-server"></i></span>
+                Resource-Outsource
+              </a>
+            </li>
+            <li>
+              <a href="custom_doftwaredev.html">
+                <span class="icon"><i class="fas fa-rocket"></i></span>
+                Custom Software Development
+              </a>
+            </li>
+          </ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+
+
+
+  <!-- Clients Hero Section -->
+
+  <div class="heading">
+    <h1>
+      Our Trusted Clients<br>
+      <span class="light-gray">We're proud to work with industry leaders who trust us to deliver exceptional digital
+        solutions</span>
+    </h1>
+  </div>
+
+  <!-- Client Section -->
+
+  <section class="cards-section">
+    <!-- Client 1 -->
+    <div class="card">
+      <img src="Images/client7.jpg" alt="Namratatc Logo" class="client-logo">
+      <h3>Namrata Trading Company </h3>
+      <p class="description">
+        We developed a professional website for Namratatc, a flooring company, with a smooth UI and intuitive
+        navigation.
+      </p>
+      <blockquote>
+        "DW Innovation created a website for Namratatc with smooth UI and easy navigation. It is very user-friendly."
+      </blockquote>
+      <a href="https://namratatc.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 2 -->
+    <div class="card">
+      <img src="Images/client4.jpg" alt="Riviera Foods Logo" class="client-logo">
+      <h3>Riviera Foods Corporation </h3>
+      <p class="description">
+        We designed and built a responsive website for Riviera Foods, showcasing their premium frozen snacks and
+        ready-to-cook products.
+      </p>
+      <blockquote>
+        "DW Innovation created a website for rivierafoods.in with smooth UI and easy navigation. It is so user-friendly
+        and easy to navigate."
+      </blockquote>
+      <a href="https://rivierafoods.in/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 3 -->
+    <div class="card">
+      <img src="Images/client1.jpg" alt="Adisun Logo" class="client-logo">
+      <h3>Adisun Solar</h3>
+      <p class="description">
+        We developed a modern website for Adisun, a solar panel company, to showcase their renewable energy solutions
+        and services.
+      </p>
+      <blockquote>
+        "DW Innovation built a visually appealing and informative website that effectively represents our solar panel
+        offerings."
+      </blockquote>
+      <a href="https://adisunsolar.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 4 -->
+    <div class="card">
+      <img src="Images/client2.jpg" alt="Adisun Logo" class="client-logo">
+      <h3>SRJ Tech India Pvt. Ltd.</h3>
+      <p class="description">
+        We created a technical website for SRJ, a machinery and mechanical engg company, to highlight their industrial
+        capabilities.
+      </p>
+      <blockquote>
+        "DW Innovation helped us present our machinery solutions with a solid online presence tailored for industrial
+        clients."
+      </blockquote>
+      <a href="https://srjtechindia.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 5 -->
+    <div class="card">
+      <img src="Images/client3.jpg" alt="Adisun Logo" class="client-logo">
+      <h3>Admark Digitech Pvt. Ltd.</h3>
+      <p class="description">
+        We designed a corporate website for Admark, a company offering advanced printing machine solutions for various
+        industries.
+      </p>
+      <blockquote>
+        "DW Innovation built a strong online platform to showcase our wide range of printing machine products and
+        services."
+      </blockquote>
+      <a href="https://admarkdigitech.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 6 -->
+    <div class="card">
+      <img src="Images/client18.png" alt="Adisun Logo" class="client-logo">
+      <h3>Aquagreen Tech Solutions (AGTS)</h3>
+      <p class="description">
+        We partnered with AGTS to build a scalable digital platform that promotes their mission of sustainability with
+        the slogan
+        <em>“Reduce • Recycle • Reuse”</em>.
+      </p>
+      <blockquote>
+        "DW Innovation helped us showcase our vision for a greener tomorrow through an impactful and user-friendly
+        platform... because we care for you!"
+      </blockquote>
+      <a href="" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 7 -->
+    <div class="card">
+      <img src="Images/client6.jpg" alt="Adisun Logo" class="client-logo">
+      <h3>Copy Care Digital</h3>
+      <p class="description">
+        We developed an e-commerce website for Copy Care Digital, a modern clothing brand, with a smooth UI and product
+        catalog integration.
+      </p>
+      <blockquote>
+        "DW Innovation created a stylish and easy-to-use e-commerce site that truly matches our fashion brand’s
+        identity."
+      </blockquote>
+      <a href="https://copycaredigitals.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 8 -->
+    <div class="card">
+      <img src="Images/client8.jpeg" alt="Adisun Logo" class="client-logo">
+      <h3>Everlast</h3>
+      <p class="description">
+        We created a modern corporate website for Everlast, a company providing cement solutions and construction
+        materials.
+      </p>
+      <blockquote>
+        "DW Innovation created a website for Everlast with smooth UI and easy navigation. It is very user-friendly."
+      </blockquote>
+      <a href="https://everlastpune.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 9 -->
+    <div class="card">
+      <img src="Images/client13.webp" alt="Adisun Logo" class="client-logo">
+      <h3>Dhruv Fabrotech</h3>
+      <p class="description">
+        We built an industrial-grade website for Dhruv Fabrotech to promote their bio-fertilizer and pesticide machinery
+        products.
+      </p>
+      <blockquote>
+        "DW Innovation created a website for Dhruv Fabrotech with smooth UI and easy navigation."
+      </blockquote>
+      <a href="https://dhruvfabrotech.in/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 10 -->
+    <div class="card">
+      <img src="Images/client15.jpg" alt="Adisun Logo" class="client-logo">
+      <h3>LGM Sports</h3>
+      <p class="description">
+        We developed an e-commerce website with an admin panel and payment integration for LGM Sports. We are also
+        building their mobile app.
+      </p>
+      <blockquote>
+        "DW Innovation created an e-commerce website for LGM Sports with admin panel and payment gateway integration."
+      </blockquote>
+      <a href="" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 11 -->
+    <div class="card">
+      <img src="Images/client15.jpg" alt="Adisun Logo" class="client-logo">
+      <h3>LGM Sports Mobile App</h3>
+      <p class="description">
+        We developed a custom mobile app for LGM Sports, fully integrated with their wearable smart band to track
+        skating speed, calories burned, and other activity metrics in real time.
+      </p>
+      <blockquote>
+        "DW Innovation built a user-friendly app that syncs with our wearable, making performance tracking simple and
+        effective."
+      </blockquote>
+      <a href="" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 12 -->
+    <div class="card">
+      <img src="Images/client9.jpeg" alt="Adisun Logo" class="client-logo">
+      <h3>MSDecor</h3>
+      <p class="description">
+        We created a professional website for MS Decor to showcase their awning and car parking tensile solutions with
+        clarity and impact.
+      </p>
+      <blockquote>
+        "DW Innovation built a robust and elegant platform that reflects the quality and reliability of our services."
+      </blockquote>
+      <a href="https://msdecorpune.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 13 -->
+    <div class="card">
+      <img src="Images/client10.jpeg" alt="Adisun Logo" class="client-logo">
+      <h3>Meghrup Linen & Decor</h3>
+      <p class="description">
+        We developed a stylish website for Meghrup Linen to highlight their range of affordable, high-quality home
+        textile products.
+      </p>
+      <blockquote>
+        "DW Innovation brought our linen brand to life online with a clean, elegant design that resonates with our
+        customers."
+      </blockquote>
+      <a href="https://meghruplinen.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 14 -->
+    <div class="card">
+      <img src="Images/client11.jpeg" alt="Adisun Logo" class="client-logo">
+      <h3>SPECIFIC ENGINEERS</h3>
+      <p class="description">
+        We crafted an informative and dynamic website for Specific Engineers to present their flooring and waterproofing
+        solutions.
+      </p>
+      <blockquote>
+        "DW Innovation delivered a site that effectively showcases our technical expertise and service quality."
+      </blockquote>
+      <a href="https://specificengineers.com/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 15 -->
+    <div class="card">
+      <img src="Images/client16.png" alt="Adisun Logo" class="client-logo">
+      <h3>Vedant Enterprise</h3>
+      <p class="description">
+        We developed a professional and robust website for Vedant Enterprise to showcase their wide range of Cement
+        Pipes, RCC Pipes, Chamber Covers, RCC Septic Tanks, and more.
+      </p>
+      <blockquote>
+        "DW Innovation built a feature-rich website for Vedant Enterprise, emphasizing product quality, durability, and
+        ease of navigation."
+      </blockquote>
+      <a href="https://vedantenterprise.in/" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 16 -->
+    <div class="card">
+      <img src="Images/client14.jpeg" alt="Adisun Logo" class="client-logo">
+      <h3>Aadi Future Systems</h3>
+      <p class="description">
+        We built a clean and modern website for Aadi to highlight their Massage Chair and fitness solutions.
+      </p>
+      <blockquote>
+        "DW Innovation delivered a polished website that perfectly captures the essence of our wellness brand and
+        product offerings."
+      </blockquote>
+      <a href="" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 17 -->
+    <div class="card">
+      <img src="Images/client17.jpeg" alt="Adisun Logo" class="client-logo">
+      <h3>Swami Samarth Enterprises</h3>
+      <p class="description">
+        We designed a clean and professional website for Swami Samarth Enterprises to present their range of Reinforced
+        Concrete Cement Pipes and Cement Pipes.
+      </p>
+      <blockquote>
+        "DW Innovation created a user-friendly website for Swami Samarth Enterprises, showcasing their precision
+        engineering and reliable products."
+      </blockquote>
+      <a href="https://swamisamarthenterprices.com/index.html" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Client 18 -->
+    <div class="card">
+      <img src="Images/client12.png" alt="Adisun Logo" class="client-logo">
+      <h3>SCREEN SOURCE</h3>
+      <p class="description">
+        We helped Screen Source showcase their innovative screen printing materials with a modern digital presence.
+      </p>
+
+      <blockquote>
+        "DW Innovation gave us a modern solution that truly reflects our commitment to customers and innovation."
+      </blockquote>
+
+      <a href="" target="_blank">Visit Site</a>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Project Section -->
+  <!-- 
+   <section class="team-section">
+    <div class="team-header">
+      <div class="heading-text">
+        <h1>"Digital Solutions, Real Success Stories."<br><span>See how our solutions drive real results.</span></h1>
+      </div>
+    </div>
+
+    <div class="scroll-container">
+      <div class="scroll-track">
+
+        <div class="team-photo"><img src="Images/project_1.jpg"><p>Riviera Foods</p></div>
+        <div class="team-photo"><img src="Images/project_2.jpg"><p>Dhruv Fabrotech</p></div>
+        <div class="team-photo"><img src="Images/project_3.jpg"><p>Adisun Solar India</p></div>
+        <div class="team-photo"><img src="Images/project_4.jpg"><p>Everlast</p></div>
+        <div class="team-photo"><img src="Images/project_5.jpg"><p>SRJ</p></div>
+        <div class="team-photo"><img src="Images/project_6.jpg"><p>Admark</p></div>
+        <div class="team-photo"><img src="Images/project_7.jpg"><p>Aadi Future Systems</p></div>
+        <div class="team-photo"><img src="Images/project_8.jpg"><p>Riviera Foods</p></div>
+
+  
+        <div class="team-photo"><img src="Images/project_1.jpg"><p>Riviera Foods</p></div>
+        <div class="team-photo"><img src="Images/project_2.jpg"><p>Dhruv Fabrotech</p></div>
+        <div class="team-photo"><img src="Images/project_3.jpg"><p>Adisun Solar India</p></div>
+        <div class="team-photo"><img src="Images/project_4.jpg"><p>Everlast</p></div>
+        <div class="team-photo"><img src="Images/project_5.jpg"><p>SRJ</p></div>
+        <div class="team-photo"><img src="Images/project_6.jpg"><p>Admark</p></div>
+        <div class="team-photo"><img src="Images/project_7.jpg"><p>Aadi Future Systems</p></div>
+        <div class="team-photo"><img src="Images/project_8.jpg"><p>Riviera Foods</p></div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+ -->
+
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script> 
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+  <script src="clients.js"></script>
+</body>
+
+</html>

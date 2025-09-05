@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - DW Innovation</title>
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+/* Mobile Hamburger - hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Mobile Menu styles */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #303030;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.mobile-menu a {
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  font-family: "Arimo", sans-serif;
+}
+
+.mobile-menu a:hover {
+  background: #fab31a;
+  color: #000;
+}
+
+/* When active - show menu */
+.mobile-menu.active {
+  display: flex;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .nav-menu,
+  #nav-part2 {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+}
+
+/* Slide-in Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu a {
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu a:hover {
+  background: #fab31a;
+  color: #000;
+}
+
+.close-btn {
+  align-self: flex-end;
+  padding: 15px 20px;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Only */
+@media (max-width: 768px) {
+  .nav-menu,
+  #nav-part2 {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    height: 45px;
+    margin-left: -10px;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  background-color: white;
+  margin-left: 20px;
+}
+
+/* Remove toggle styles — not needed anymore */
+.logo-switch {
+  display: none;
+}
+
+.nav-menu {
+  background-color: #303030;
+  border-radius: 50px;
+  padding: 15px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #fab31a;
+}
+
+.dropdown {
+  position: relative;
+}
+
+
+
+
+.contact-btn {
+  background-color: #fab31a;
+  color: #000;
+  padding: 7px 25px;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Arimo", sans-serif;
+}
+
+.contact-btn i {
+  background-color: #000;
+  color: #fab31a;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
+#nav-part2 {
+  padding: 8px 20px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000000bb;
+  transition: all ease 0.4s;
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+#nav-part2 h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(to right, #0f1d3e, #0e234b);; */
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+  background-color: #fab31a;
+}
+
+#nav-part2 h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+#nav-part2 h4 a {
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+  font-family: "Arimo", sans-serif;
+}
+
+#nav-part2 h4:hover a {
+  color: #333333 ;
+}
+
+#nav-part2 i {
+  background-color: #000;
+  color: #fab31a;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
+/* Desktop Dropdown Grid */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  min-width: 250px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  opacity: 0;
+  transform: translateY(15px);
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Arimo", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  color: #fab31a;
+}
+
+.dropdown-content .icon {
+  background-color: #333333 ;
+  color: #fab31a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+
+
+/* Terms of Services Section */
+
+:root{
+  --max-width: 920px;
+  --body-bg: #f3f3f5;
+  --text-color: #2b2b2b;
+  --muted: #555;
+  --accent: #111;
+  --line-height: 1.7;
+  --container-pad: 40px;
+  --card-bg: #ffffff;
+}
+
+/* subtle diagonal stripes background (like the reference) */
+body{
+  margin:0;
+  font-family: "Rajdhani", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text-color);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+
+}
+
+/* center the page content but keep wide white card look */
+.page{
+  justify-content:center;
+  padding: 20px 0px;
+}
+
+/* white card container */
+/* .content{
+  width:100%;
+  max-width:var(--max-width);
+  background:whitesmoke;
+  padding: var(--container-pad);
+  box-shadow: 0 8px 28px rgba(16,24,40,0.08);
+  border-radius: 6px;
+  border-left: 6px solid rgba(0,0,0,0.06);
+  box-sizing:border-box;
+  margin-left: 180px;
+} */
+
+/* header area */
+.hero{
+  max-width:var(--max-width);
+  margin-bottom: 18px;
+  display:block;
+  text-align:center;
+  padding-top: 40px;
+  margin-left: 180px;
+}
+
+.site-title{
+  font-size: 3rem;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  color: var(--accent);
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.03);
+  letter-spacing: -0.5px;
+}
+
+.meta{
+  margin:0;
+  color:var(--muted);
+  font-size:0.95rem;
+  margin-bottom: 12px;
+}
+
+/* intro paragraph like the image */
+.intro{
+  color: #3b3b3b;
+  font-size: 1rem;
+  margin: 6px 0 18px 0;
+  line-height: var(--line-height);
+}
+
+/* section title (small caps feel) */
+.section{
+  margin: 18px 0;
+}
+
+.section-title{
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  color: #111;
+  text-transform: none;
+}
+
+/* numbered lists styling */
+.numbered{
+  margin: 0 0 0 18px;
+  padding: 0;
+  list-style: decimal;
+  color: #3b3b3b;
+  line-height: var(--line-height);
+  font-size: 0.95rem;
+}
+
+/* bullets */
+.bullets{
+  margin: 0 0 0 18px;
+  padding: 0;
+  list-style: disc;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: var(--line-height);
+}
+
+/* contacts and links */
+.contact{
+  color: var(--muted);
+  font-style: normal;
+  line-height: var(--line-height);
+  font-size: 0.95rem;
+}
+
+a.link{
+  color: #0b57d0;
+  text-decoration: none;
+}
+
+a.link:hover{ text-decoration: underline; }
+
+.content {
+  width: 100%;
+  max-width: var(--max-width);
+  background: whitesmoke;
+  padding: var(--container-pad);
+  box-shadow: 0 8px 28px rgba(16, 24, 40, 0.08);
+  border-radius: 6px;
+  border-left: 6px solid rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin: 0 auto; /* ✅ Center in desktop, no left push */
+  overflow: visible; /* ✅ Remove inner scroll */
+}
+
+/* Large Mobiles (≤ 720px) */
+@media (max-width: 720px) {
+  :root {
+    --container-pad: 16px;
+  }
+  .content {
+    padding: 16px;
+    box-shadow: none; /* ✅ Optional: remove shadow in small screen */
+    border-left: none; /* ✅ Optional: remove border in small screen */
+    background: transparent; /* ✅ Optional: no card, only text */
+  }
+  .site-title {
+    font-size: 1.8rem;
+  }
+   .hero {
+    padding-top: 20px;
+    margin: 0 auto;   /* ✅ Always center */
+    text-align: center;
+  }
+}
+
+/* Medium Mobiles (≤ 540px) */
+@media (max-width: 540px) {
+  .content {
+    padding: 14px;
+  }
+  .site-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small Mobiles (≤ 375px) */
+@media (max-width: 375px) {
+  .content {
+    padding: 10px;
+  }
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+}
+
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float-button {
+      position: fixed;
+      bottom: 10px;
+      right: 22px;
+      z-index: 999;
+      text-align: center;
+    }
+
+    .whatsapp-main-btn {
+      background-color: #25d366;
+      color: white;
+      font-size: 28px;
+      padding: 12px 16px;
+      border-radius: 100%;
+      display: inline-block;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease;
+    }
+    .whatsapp-main-btn:hover {
+      background-color: #1ebd5b;
+    }
+
+    /* Options dropdown */
+    .whatsapp-options {
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .whatsapp-options a {
+      background: #25d366;
+      color: #fff;
+      padding: 8px 12px;
+      margin: 4px 0;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+    .whatsapp-options a:hover {
+      background: #1ebd5b;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- <div id="navbar-container"></div>    -->
+
+  <header class="navbar">
+    <!-- Left logo -->
+    <div class="logo">
+      <img src="Images/DWI_logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown-content">
+<li>
+    <a href="web_development.html">
+      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+     Web Development
+    </a>
+  </li>
+  <li>
+    <a href="app_development.html">
+      <span class="icon"><i class="fas fa-code"></i></span>
+      App Development
+    </a>
+  </li>
+  <li>
+    <a href="ui_ux-design.html">
+      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+     UI/UX Design
+    </a>
+  </li>
+    <li>
+    <a href="mvp_to_product.html">
+      <span class="icon"><i class="fas fa-lightbulb"></i></span>
+      MVP to Product
+    </a>
+  </li>
+  <li>
+    <a href="ai_machinelearning.html">
+      <span class="icon"><i class="fas fa-cube"></i></span>
+      AI & Machine Learning
+    </a>
+  </li>
+  <li>
+    <a href="hardware_iot.html">
+      <span class="icon"><i class="fas fa-microchip"></i></span>
+      Hardware & IoT Development
+    </a>
+  </li>
+  <li>
+    <a href="erp_crm_system.html">
+      <span class="icon"><i class="fas fa-project-diagram"></i></span>
+      ERP & CRM Systems
+    </a>
+  </li>
+  <li>
+    <a href="resource_outsource.html">
+      <span class="icon"><i class="fas fa-server"></i></span>
+     Resource-Outsource
+    </a>
+  </li>
+  <li>
+    <a href="custom_doftwaredev.html">
+      <span class="icon"><i class="fas fa-rocket"></i></span>
+      Custom Software Development
+    </a>
+  </li>
+</ul>
+
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="clients.html">Our Clients</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Contact -->
+    <div id="nav-part2">
+      <h4><a href="contact.html">Contact <i class="fas fa-arrow-right"></i></a></h4>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="clients.html">Our Clients</a>
+    <a href="career.html">Career</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeBtn = document.querySelector(".close-btn");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  </script>
+
+
+
+<!-- Terms of Services Section -->
+
+
+ <main class="page">
+    <header class="hero">
+      <h1 class="site-title">Terms of Service</h1>
+      <p class="meta">Last Updated: <span id="last-updated">September 04, 2025</span></p>
+    </header>
+
+    <article class="content">
+      <p class="intro">
+        Welcome to <strong>DW Innovation Pvt. Ltd.</strong> (“DW Innovation”, “we”, “our”, or “us”). These Terms of Service (“Terms”) govern your access to and use of our websites, platforms, applications, products, and services (collectively, the “Services”). By accessing or using our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services.
+      </p>
+
+      <section class="section">
+        <h2 class="section-title">1. Ownership of Rights &amp; Use of Content</h2>
+        <ol class="numbered">
+          <li><strong>All materials</strong>, content, logos, trademarks, software, code, designs, graphics, text, and data provided through our Services are the intellectual property of DW Innovation or its licensors.</li>
+          <li>Except as expressly permitted, you may not copy, reproduce, modify, distribute, publish, transmit, or create derivative works without prior written consent.</li>
+          <li>We grant you a limited, non-exclusive, non-transferable license to use the Services for lawful business purposes, subject to compliance with these Terms.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">2. User Responsibilities</h2>
+        <p>By using our Services, you agree that you will not:</p>
+        <ul class="bullets">
+          <li>Use the Services for unlawful, harmful, or fraudulent activities.</li>
+          <li>Attempt to gain unauthorized access to systems, networks, or data.</li>
+          <li>Interfere with or disrupt the performance or security of the Services.</li>
+          <li>Upload or transmit any viruses, malicious code, or harmful content.</li>
+          <li>Infringe the intellectual property or privacy rights of others.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">3. Disclaimers of Warranties</h2>
+        <ol class="numbered">
+          <li>The Services and all content are provided “AS IS” and “AS AVAILABLE”, without warranties of any kind.</li>
+          <li>DW Innovation disclaims all express, implied, or statutory warranties.</li>
+          <li>While we strive for accuracy, we do not warrant that the Services will be error-free, secure, or uninterrupted.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">4. Limitation of Liability</h2>
+        <ol class="numbered">
+          <li>To the maximum extent permitted by law, DW Innovation is not liable for any direct, indirect, incidental, consequential, punitive, or special damages arising out of or related to your use of the Services.</li>
+          <li>Our total liability shall not exceed the amount paid (if any) for accessing the Services in the twelve (12) months preceding the claim.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">5. Third-Party Content &amp; Links</h2>
+        <ol class="numbered">
+          <li>Our Services may include links or references to third-party websites, applications, or content (“Third-Party Content”).</li>
+          <li>We do not control, endorse, or assume responsibility for Third-Party Content. Accessing such content is at your own risk.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">6. Submissions &amp; Transmitted Materials</h2>
+        <ol class="numbered">
+          <li>Any information, materials, feedback, or ideas you transmit to us shall be considered non-confidential and non-proprietary unless otherwise agreed in writing.</li>
+          <li>By submitting content, you grant DW Innovation a worldwide, royalty-free, perpetual license to use, reproduce, modify, distribute, and display such content for business purposes.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">7. Privacy</h2>
+        <p>Your use of the Services is also governed by our <a href="#" class="link">Privacy Policy</a>, which explains how we collect, use, and protect your personal information.</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">8. Termination</h2>
+        <ol class="numbered">
+          <li>We reserve the right to suspend or terminate access to our Services at any time, without notice, if we believe you have violated these Terms.</li>
+          <li>Upon termination, your right to use the Services immediately ceases, and any licenses granted to you under these Terms shall be revoked.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">9. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless DW Innovation, its officers, employees, affiliates, and partners from any claims, damages, liabilities, losses, or expenses (including legal fees) arising out of:</p>
+        <ul class="bullets">
+          <li>Your use or misuse of the Services.</li>
+          <li>Your violation of these Terms.</li>
+          <li>Your violation of any applicable laws or third-party rights.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">10. Changes to Terms</h2>
+        <p>We may modify these Terms at any time by posting an updated version on our website. Changes are effective upon posting. Continued use of our Services after changes constitutes your acceptance of the revised Terms.</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">11. Governing Law &amp; Jurisdiction</h2>
+        <ol class="numbered">
+          <li>These Terms are governed by the laws of India, without regard to conflict of law principles.</li>
+          <li>Any disputes shall be subject to the exclusive jurisdiction of the competent courts in [City], India.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">12. Entire Agreement</h2>
+        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and DW Innovation regarding the Services and supersede any prior agreements.</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">13. Contact Us</h2>
+        <address class="contact">
+          DW Innovation Pvt. Ltd.<br>
+          Office No. 13, 3rd Floor, Shreya Business Hub, Pari Chowk, Near Cng Gas Station, Narhe, Pune. Maharashtra- 411041<br>
+          Email: <a href="mailto:legal@dwinno.com" class="link">info@dwi4u.com</a><br>
+          Phone: [+91 8669086844, +91 9595505063]
+        </address>
+      </section>
+
+    </article>
+  </main>
+
+
+<script>
+    // script.js
+// small script to set or update the "Last Updated" date dynamically.
+// You can change this date string if you want.
+(function(){
+  const lastUpdatedEl = document.getElementById('last-updated');
+  // If you prefer to use current date uncomment the following two lines:
+  // const now = new Date();
+  // lastUpdatedEl.textContent = now.toLocaleDateString(undefined, { year:'numeric', month:'long', day:'numeric' });
+
+  // Keep the given date from your content:
+  lastUpdatedEl.textContent = 'September 04, 2025';
+})();
+
+</script>  
+
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float-button">
+    <div class="whatsapp-main-btn" onclick="toggleWhatsAppOptions()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-options" id="whatsappOptions">
+      <a href="https://wa.me/919284117439?text=Hello%2C%20I%20want%20to%20contact%20HR" target="_blank">HR</a>
+      <a href="https://wa.me/919595505063?text=Hello%2C%20I%20want%20to%20contact%20Marketing" target="_blank">Marketing</a>
+    </div>
+  </div>
+
+  <!-- Script placed at the END of body -->
+  <script>
+    function toggleWhatsAppOptions() {
+      var options = document.getElementById("whatsappOptions");
+      if (options.style.display === "flex") {
+        options.style.display = "none";
+      } else {
+        options.style.display = "flex";
+      }
+    }
+  </script>
+
+  <!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>
+</body>
+</html>
