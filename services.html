@@ -28,62 +28,56 @@
         <li><a href="index.html">Home</a></li>
         <li class="dropdown">
           <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
-<ul class="dropdown-content">
-<li>
-    <a href="web_development.html">
-      <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
-     Web Development
-    </a>
-  </li>
-  <li>
-    <a href="app_development.html">
-      <span class="icon"><i class="fas fa-code"></i></span>
-      App Development
-    </a>
-  </li>
-  <li>
-    <a href="ui_ux-design.html">
-      <span class="icon"><i class="fas fa-mobile-alt"></i></span>
-     UI/UX Design
-    </a>
-  </li>
-    <li>
-    <a href="mvp_to_product.html">
-      <span class="icon"><i class="fas fa-lightbulb"></i></span>
-      MVP to Product
-    </a>
-  </li>
-  <li>
-    <a href="ai_machinelearning.html">
-      <span class="icon"><i class="fas fa-cube"></i></span>
-      AI & Machine Learning
-    </a>
-  </li>
-  <li>
-    <a href="hardware_iot.html">
-      <span class="icon"><i class="fas fa-microchip"></i></span>
-      Hardware & IoT Development
-    </a>
-  </li>
-  <li>
-    <a href="erp_crm_system.html">
-      <span class="icon"><i class="fas fa-project-diagram"></i></span>
-      ERP & CRM Systems
-    </a>
-  </li>
-  <li>
-    <a href="resource_outsource.html">
-      <span class="icon"><i class="fas fa-server"></i></span>
-     Resource-Outsource
-    </a>
-  </li>
-  <li>
-    <a href="custom_doftwaredev.html">
-      <span class="icon"><i class="fas fa-rocket"></i></span>
-      Custom Software Development
-    </a>
-  </li>
-</ul>
+          <ul class="dropdown-content">
+            <li>
+              <a href="web_development.html">
+                <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+                Web Development
+              </a>
+            </li>
+            <li>
+              <a href="ui_ux-design.html">
+                <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                UI/UX Design
+              </a>
+            </li>
+            <li>
+              <a href="app_development.html">
+                <span class="icon"><i class="fas fa-code"></i></span>
+                App Development
+              </a>
+            </li>
+            <li>
+              <a href="erp_crm_system.html">
+                <span class="icon"><i class="fas fa-project-diagram"></i></span>
+                ERP & CRM Systems
+              </a>
+            </li>
+            <li>
+              <a href="ai_machinelearning.html">
+                <span class="icon"><i class="fas fa-cube"></i></span>
+                AI & Machine Learning
+              </a>
+            </li>
+            <li>
+              <a href="hardware_iot.html">
+                <span class="icon"><i class="fas fa-microchip"></i></span>
+                Hardware & IoT Development
+              </a>
+            </li>
+            <li>
+              <a href="resource_outsource.html">
+                <span class="icon"><i class="fas fa-server"></i></span>
+                Resource-Outsource
+              </a>
+            </li>
+            <li>
+              <a href="custom_doftwaredev.html">
+                <span class="icon"><i class="fas fa-rocket"></i></span>
+                Custom Software Development
+              </a>
+            </li>
+          </ul>
 
         </li>
         <li><a href="about.html">About Us</a></li>
@@ -108,13 +102,31 @@
   <div class="mobile-menu">
     <div class="close-btn"><i class="fas fa-times"></i></div>
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
+
+    <!-- Services Dropdown (Mobile Only) -->
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-btn">
+      Services <i class="fas fa-caret-down"></i>
+      </button>
+      <div class="mobile-dropdown-content">
+        <a href="web_development.html">Web Development</a>
+        <a href="ui_ux-design.html">UI/UX Design</a>
+        <a href="app_development.html">App Development</a>
+        <a href="erp_crm_system.html">ERP & CRM Systems</a>
+        <a href="ai_machinelearning.html">AI & Machine Learning</a>
+        <a href="hardware_iot.html">Hardware & IoT Development</a>
+        <a href="resource_outsource.html">Resource-Outsource</a>
+        <a href="custom_doftwaredev.html">Custom Software Development</a>
+      </div>
+    </div>
+
     <a href="about.html">About Us</a>
     <a href="clients.html">Our Clients</a>
     <a href="career.html">Career</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact Us</a>
   </div>
+
 
   <script>
     const hamburger = document.querySelector(".hamburger");
@@ -128,6 +140,17 @@
     closeBtn.addEventListener("click", () => {
       mobileMenu.classList.remove("active");
     });
+
+
+    // Dropdown toggle in mobile menu
+    const dropdownBtn = document.querySelector(".mobile-dropdown-btn");
+    const dropdownContent = document.querySelector(".mobile-dropdown-content");
+
+    dropdownBtn.addEventListener("click", () => {
+      dropdownContent.style.display =
+        dropdownContent.style.display === "flex" ? "none" : "flex";
+    });
+
   </script>
     
 
