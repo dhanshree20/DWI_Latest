@@ -102,13 +102,13 @@ body {
 }
 
 .footer-column1 h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .footer-column1 p{
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 15px;
   line-height: 1.6;
   font-weight: 500;
@@ -116,13 +116,13 @@ body {
 
 .footer-column h2,
 .footer-column h3 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .footer-column p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 15px;
   line-height: 1.6;
   font-weight: 500;
@@ -141,22 +141,22 @@ body {
 .footer-column ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
-  color: #fab31a;
+  color: #fc8d1e;
 }
 
 .social-icons a {
   margin-right: 15px;
-  font-size: 18px;
+  font-size: 24px;
   color: white;
 }
 .social-icons a:hover {
-   color: #fab31a;
+   color: #fc8d1e;
 }
 
 .tech-column .tech-columns {
@@ -166,7 +166,7 @@ body {
 }
 
 .tech-column h4 {
-  color: #fab31a;
+  color: #fc8d1e;
   margin-top: 10px;
   font-size: 15px;
 }
@@ -187,9 +187,9 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Rajdhani", sans-serif;
-  margin-left: 550px;
+  margin-left: 650px;
   text-decoration: none;
 }
 
@@ -211,7 +211,7 @@ body {
 
 .footer-bottom p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -226,11 +226,11 @@ body {
   text-decoration: none;
   color: #ccc;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .footer-links a:hover {
-  color: #fab31a;
+  color: #fc8d1e;
 }
 
 
@@ -293,14 +293,18 @@ flex-direction: column;
   }
   .footer-column1 p,
   .footer-column p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer-links a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer-contact-button {
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px 15px;
+  }
+
+  .footer-column ul li a {
+    font-size: 16px;
   }
 }
 

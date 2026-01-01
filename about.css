@@ -41,7 +41,7 @@
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -172,16 +172,19 @@
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  transition: color 0.3s ease;
   font-family: "Arimo", sans-serif;
   font-weight: 500;
+  padding: 4px 5px; /* fixed padding here */
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; /* ensures hover effect doesn't affect others */
+  box-sizing: border-box;
 }
 
 .nav-links a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 20px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
+  /* Remove padding change */
 }
 
 .dropdown {
@@ -192,7 +195,7 @@
 
 
 .contact-btn {
-  background-color: #fab31a;
+  background-color: #fc8d1e;
   color: #000;
   padding: 7px 25px;
   border-radius: 50px;
@@ -209,7 +212,7 @@
 
 .contact-btn i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -237,7 +240,7 @@
   bottom: -100%;
   border-radius: 50%;
   transition: all ease 0.4s;
-  background-color: #fab31a;
+  background-color: #fc8d1e;
 }
 
 #nav-part2 h4:hover::after {
@@ -259,7 +262,7 @@
 
 #nav-part2 i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -304,19 +307,19 @@
   font-size: 16px;
   font-weight: 600;
   font-family: "Arimo", sans-serif;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 10px;  /* Normal state me padding fixed rakho */
+  border-radius: 30px; /* Hover ke liye same radius yaha pe de do */
 }
 
 .dropdown-content a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 30px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
 }
 
 .dropdown-content .icon {
   background-color: #333333 ;
-  color: #fab31a;
+  color: #fc8d1e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,7 +355,7 @@
 }
 
 .mobile-dropdown-btn:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -366,11 +369,12 @@
   padding: 12px 40px; /* indented look */
   font-size: 16px;
   color: #fff;
+  margin-left: 22px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .mobile-dropdown-content a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -396,8 +400,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 40px;
-  gap: 40px;
+  padding: 40px 20px;
+  gap: 60px;
   flex-wrap: wrap;
   background-color: #fff;
 }
@@ -405,12 +409,12 @@ body {
 .left-image-container {
   flex: 1;
   min-width: 300px;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .left-image-container img {
   width: 130%;
-  height: 550px;
+  height: 600px;
   object-fit: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   transition: opacity 1s ease-in-out;
@@ -430,13 +434,13 @@ body {
 }
 
 .right-content .highlight {
-  color: #fab31a;
+  color: #fc8d1e;
 }
 
 .underline {
   width: 60px;
   height: 4px;
-  background-color: #fab31a;
+  background-color: #fc8d1e;
   margin-bottom: 20px;
   margin-left: 200px;
 }
@@ -458,7 +462,7 @@ body {
   display: flex;
   margin-top: -30px;
   gap: 8px;
-  margin-left: 380px;
+  margin-left: 470px;
 }
 
 .carousel-dots span {
@@ -472,7 +476,7 @@ body {
 }
 
 .carousel-dots span.active {
-  background-color: #fab31a;
+  background-color: #fc8d1e;
 }
 
 /* Mobile Large (max-width: 1024px) */
@@ -560,13 +564,13 @@ body {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
 .paragraph {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   margin-bottom: 30px;
 }
@@ -599,7 +603,7 @@ body {
 /* Mobile Small (max-width: 480px) */
 @media (max-width: 480px) {
   .title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .paragraph {
@@ -657,7 +661,7 @@ h1 {
 }
 
 .accordion-item {
-  border-top: 2px solid #fab31a;
+  border-top: 2px solid #fc8d1e;
   padding-top: 20px;
   margin-left: 40px;
 }
@@ -697,7 +701,7 @@ h1 {
 }
 
 .accordion-content.open {
-  max-height: 2200px;
+  max-height: 3000px;
   padding-top: 15px;
 }
 
@@ -1053,6 +1057,10 @@ body {
   padding: 20px 40px;
 }
 
+.team-section {
+  padding-bottom: 20px;
+}
+
 /* Typography */
 .subtitle {
   font-size: 20px;
@@ -1065,7 +1073,9 @@ body {
   font-weight: 600;
   margin-bottom: 50px;
   line-height: 1.4;
-  margin-left: 450px;
+  margin-right: 80px;
+  text-align: right;
+  
 }
 
 .main-title .light-gray {
@@ -1088,7 +1098,7 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  margin-left: 20px;
+  margin-left: 100px;
 }
 
 .card {
@@ -1135,6 +1145,7 @@ body {
   .card {
     flex: 1 1 100%;
     max-width: 100%;
+    margin-left: -80px;
   }
 }
 
@@ -1167,8 +1178,8 @@ body {
 
 @media (max-width: 480px) {
   .main-title {
-    font-size: 1.6rem;
-    margin-left: 0;
+    font-size: 1.8rem;
+    margin-left: 80px;
     text-align: center;
   }
 

@@ -26,17 +26,21 @@ headers.forEach(header => {
 const imageArray = [
   "Images/open_mic_1.JPG",
   "Images/anniversary_1.JPG",
+  "Images/image2.jpg",
   "Images/cricket_2.JPG",
   "Images/Welcome_kit_1.jpeg",
-  "Images/anniversary_2.JPG"
+  "Images/anniversary_2.JPG",
+  "Images/open_mic_3.jpeg"
 ];
 
 const textArray = [
   "An evening of creativity, expression, and talent — our Open Mic event gave a platform for voices to be heard and stories to be shared.",
   "Celebrating years of innovation, teamwork, and growth — here’s to the journey we’ve shared and the milestones yet to come!",
+  "From poetry to music, from laughter to reflection — our Open Mic brought together moments to cherish.",
   "Our Cricket Event was a thrilling display of teamwork, energy — bringing the entire DW Innovation family together on and off the field.",
   "A token of appreciation and a gesture of warmth — our Welcome Kit is crafted to make every new team member feel valued from day one.",
-  "A milestone of growth, teamwork, and shared dreams — our Anniversary Celebration was a tribute to the journey we’ve built together."
+  "A milestone of growth, teamwork, and shared dreams — our Anniversary Celebration was a tribute to the journey we’ve built together.",
+  "A day filled with passion, laughter, and connection — our Open Mic brought together diverse voices, heartfelt stories, and unforgettable performances."
 ];
 
 let currentSlide = 0;

@@ -48,7 +48,7 @@
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -175,20 +175,24 @@
   gap: 25px;
 }
 
+
 .nav-links a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  transition: color 0.3s ease;
   font-family: "Arimo", sans-serif;
   font-weight: 500;
+  padding: 4px 5px; /* fixed padding here */
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; /* ensures hover effect doesn't affect others */
+  box-sizing: border-box;
 }
 
 .nav-links a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 20px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
+  /* Remove padding change */
 }
 
 .dropdown {
@@ -199,7 +203,7 @@
 
 
 .contact-btn {
-  background-color: #fab31a;
+  background-color: #fc8d1e;
   color: #000;
   padding: 7px 25px;
   border-radius: 50px;
@@ -216,7 +220,7 @@
 
 .contact-btn i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -244,7 +248,7 @@
   bottom: -100%;
   border-radius: 50%;
   transition: all ease 0.4s;
-  background-color: #fab31a;
+  background-color: #fc8d1e;
 }
 
 #nav-part2 h4:hover::after {
@@ -266,7 +270,7 @@
 
 #nav-part2 i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -311,19 +315,19 @@
   font-size: 16px;
   font-weight: 600;
   font-family: "Arimo", sans-serif;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 10px;  /* Normal state me padding fixed rakho */
+  border-radius: 30px; /* Hover ke liye same radius yaha pe de do */
 }
 
 .dropdown-content a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 30px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
 }
 
 .dropdown-content .icon {
   background-color: #333333 ;
-  color: #fab31a;
+  color: #fc8d1e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,7 +363,7 @@
 }
 
 .mobile-dropdown-btn:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -373,11 +377,12 @@
   padding: 12px 40px; /* indented look */
   font-size: 16px;
   color: #fff;
+  margin-left: 22px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .mobile-dropdown-content a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -402,7 +407,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 60px 8%;
+        padding: 60px 7%;
         flex-wrap: wrap;
     }
 
@@ -643,6 +648,8 @@
 
 /* Our Process */
 
+/* Base Styles (aapke diye hue same rahenge) */
+/* ----------------------------- */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fb;
@@ -724,7 +731,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
-  animation: bloom 2s infinite ease-in-out;  /* 🔥 Add Animation */
+  animation: bloom 2s infinite ease-in-out;
 }
 
 .timeline-item.left .circle {
@@ -780,149 +787,119 @@ body {
 }
 
 
-/* Responsive */
-/* Base styles remain as you provided above */
+/* ----------------------------- */
+/* ✅ Responsive Breakpoints */
+/* ----------------------------- */
 
-/* Tablet and small laptops */
-@media screen and (max-width: 1024px) {
-  .section-title {
-    font-size: 2.5rem;
+/* Extra small devices (phones, portrait) */
+/* Base Styles remain same (aapke diye huye) */
+
+/* ----------------------------- */
+/* ✅ Responsive Timeline for Mobile */
+/* ----------------------------- */
+
+/* Extra small devices (phones, portrait) */
+@media (max-width: 320px) {
+  .timeline::after { left: 20px; }
+  .timeline-item { 
+    width: 100%; 
+    padding: 0 8px 25px 55px; 
+    text-align: left; 
   }
-  .section-subtitle {
-    font-size: 1.1rem;
-  }
-  .timeline-item h3 {
-    font-size: 1.6rem;
-  }
-  .timeline-item p {
-    font-size: 1rem;
+  .timeline-item.left, .timeline-item.right { left: 0; text-align: left; }
+  .circle { 
+    left: 20px; 
+    width: 36px; height: 36px; 
+    font-size: 0.8rem; 
+    line-height: 36px; 
   }
 }
 
-/* Mobile L (425px - 599px) */
-@media screen and (max-width: 599px) {
-  .process-section {
-    padding: 40px 15px;
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .timeline::after { left: 25px; }
+  .timeline-item { 
+    width: 100%; 
+    padding: 0 10px 30px 65px; 
+    text-align: left; 
   }
-  .section-title {
-    font-size: 2rem;
-  }
-  .section-subtitle {
-    font-size: 1rem;
-    margin-bottom: 40px;
-  }
-  .timeline::after {
-    left: 25px;
-  }
-  .timeline-item {
-    width: 100%;
-    padding: 0 15px 30px 60px;
-  }
-  .timeline-item.right .circle {
-    transform: none !important;
-    left: 25px;
-  }
-  .circle {
-    width: 50px;
-    height: 50px;
-    font-size: 1rem;
-    line-height: 50px;
-    left: 25px;
-    transform: none;
-  }
-  .tags span {
-    font-size: 0.85rem;
-    padding: 4px 10px;
+  .timeline-item.left, .timeline-item.right { left: 0; text-align: left; }
+  .circle { 
+    left: 25px; 
+    width: 40px; height: 40px; 
+    font-size: 0.9rem; 
+    line-height: 40px; 
   }
 }
 
-/* Mobile M (375px - 424px) */
-@media screen and (max-width: 424px) {
-  .section-title {
-    font-size: 1.8rem;
+/* Medium devices (phones) */
+@media (max-width: 576px) {
+  .timeline::after { left: 28px; }
+  .timeline-item { 
+    width: 100%; 
+    padding: 0 15px 35px 70px; 
+    text-align: left; 
   }
-  .section-subtitle {
-    font-size: 0.95rem;
-  }
-  .timeline::after {
-    left: 22px;
-  }
-  .timeline-item {
-    padding: 0 10px 25px 55px;
-  }
-  .circle {
-    width: 45px;
-    height: 45px;
-    font-size: 0.9rem;
-    line-height: 45px;
-    left: 22px;
-  }
-  .timeline-item h3 {
-    font-size: 1.4rem;
-  }
-  .timeline-item p {
-    font-size: 0.95rem;
-  }
-  .timeline-item.right .circle {
-    transform: none !important;
-    left: 22px;
+  .timeline-item.left, .timeline-item.right { left: 0; text-align: left; }
+  .circle { 
+    left: 28px; 
+    width: 45px; height: 45px; 
+    font-size: 1rem; 
+    line-height: 45px; 
   }
 }
 
-/* Mobile S (up to 374px) */
-@media screen and (max-width: 374px) {
-  .process-section {
-    padding: 30px 10px;
+/* Large phones */
+@media (max-width: 768px) {
+   .timeline::after { left: 30px; }
+  .timeline-item { 
+    width: 100%; 
+    padding: 0 20px 40px 75px; 
+    text-align: left; 
   }
-  .section-title {
-    font-size: 1.6rem;
-  }
-  .section-subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 30px;
-  }
-  .timeline::after {
-    left: 18px;
-  }
-  .timeline-item {
-    padding: 0 8px 20px 50px;
-  }
-  .circle {
-    width: 40px;
-    height: 40px;
-    font-size: 0.85rem;
-    line-height: 40px;
-    left: 18px;
-  }
-  .timeline-item h3 {
-    font-size: 1.2rem;
-  }
-  .timeline-item p {
-    font-size: 0.9rem;
-  }
-  .tags span {
-    font-size: 0.8rem;
-    padding: 3px 8px;
+  .timeline-item.left, 
+  .timeline-item.right { 
+    left: 0; 
+    text-align: left; 
   }
 
-  .timeline-item.left .circle {
-    margin-left: -160px;
-  }
-
-  .timeline-item.right .circle {
-    transform: none !important;
-    left: -5px;
-  }
-
-  .timeline-item.right {
-    margin-left: -170px;
-  }
-
-  .timeline-item.left {
-    text-align: left;
+  /* ✅ Force override left/right circles */
+  .timeline-item.left .circle,
+  .timeline-item.right .circle,
+  .circle { 
+    left: 0px;   /* line ke upar fix */
+    transform: translate(0, 0) !important; /* desktop ka translate hatao */
+    width: 50px; 
+    height: 50px; 
+    font-size: 1.1rem; 
+    line-height: 50px; 
+    z-index: 5;
   }
 }
 
+
+/* Tablets */
+@media (max-width: 992px) {
+  .section-title { font-size: 2.4rem; }
+  .section-subtitle { font-size: 1.05rem; }
+  .timeline-item h3 { font-size: 1.6rem; }
+  .timeline-item p { font-size: 1rem; }
+}
+
+/* Small laptops */
+@media (max-width: 1200px) {
+  .section-title { font-size: 2.6rem; }
+}
+
+/* Large laptops / desktops */
+@media (max-width: 1400px) {
+  .section-title { font-size: 2.8rem; }
+}
+
+/* Extra large desktops */
+@media (min-width: 1401px) {
+  .section-title { font-size: 3rem; }
+}
 
 
 
@@ -943,7 +920,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  padding: 40px 20px;
+  padding: 40px 80px;
 }
 
 .project-card {

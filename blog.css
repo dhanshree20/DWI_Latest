@@ -50,7 +50,7 @@
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -181,16 +181,19 @@
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  transition: color 0.3s ease;
   font-family: "Arimo", sans-serif;
   font-weight: 500;
+  padding: 4px 5px; /* fixed padding here */
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; /* ensures hover effect doesn't affect others */
+  box-sizing: border-box;
 }
 
 .nav-links a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 20px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
+  /* Remove padding change */
 }
 
 .dropdown {
@@ -201,7 +204,7 @@
 
 
 .contact-btn {
-  background-color: #fab31a;
+  background-color: #fc8d1e;
   color: #000;
   padding: 7px 25px;
   border-radius: 50px;
@@ -218,7 +221,7 @@
 
 .contact-btn i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -246,7 +249,7 @@
   bottom: -100%;
   border-radius: 50%;
   transition: all ease 0.4s;
-  background-color: #fab31a;
+  background-color: #fc8d1e;
 }
 
 #nav-part2 h4:hover::after {
@@ -268,7 +271,7 @@
 
 #nav-part2 i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -313,19 +316,19 @@
   font-size: 16px;
   font-weight: 600;
   font-family: "Arimo", sans-serif;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 10px;  /* Normal state me padding fixed rakho */
+  border-radius: 30px; /* Hover ke liye same radius yaha pe de do */
 }
 
 .dropdown-content a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 30px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
 }
 
 .dropdown-content .icon {
   background-color: #333333 ;
-  color: #fab31a;
+  color: #fc8d1e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -361,7 +364,7 @@
 }
 
 .mobile-dropdown-btn:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -375,11 +378,12 @@
   padding: 12px 40px; /* indented look */
   font-size: 16px;
   color: #fff;
+  margin-left: 22px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .mobile-dropdown-content a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -530,7 +534,7 @@ body {
 
 .date {
   color: #6b7280;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 8px;
   font-weight: 500;
 }
@@ -545,7 +549,7 @@ body {
 }
 
 .description {
-  font-size: 15px;
+  font-size: 18px;
   color: #4b5563;
   margin-bottom: 18px;
   height: 45px; /* One line or two lines max */
@@ -555,7 +559,7 @@ body {
 
 
 .read-more {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   color: #2563eb;
   text-decoration: none;
@@ -574,17 +578,19 @@ body {
 .extra-content h4 {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .extra-content ul {
   padding-left: 20px;
   list-style: disc;
+  font-size: 18px;
 }
 
 .toggle-details {
   display: inline-block;
   margin-top: 8px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   color: #2563eb;
   text-decoration: none;

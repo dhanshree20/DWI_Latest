@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DZ81TRD7J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9DZ81TRD7J');
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Service - DW Innovation</title>
@@ -54,7 +64,7 @@ html, body {
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -111,7 +121,7 @@ html, body {
 }
 
 .mobile-menu a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -185,16 +195,19 @@ html, body {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  transition: color 0.3s ease;
   font-family: "Arimo", sans-serif;
   font-weight: 500;
+  padding: 4px 5px; /* fixed padding here */
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; /* ensures hover effect doesn't affect others */
+  box-sizing: border-box;
 }
 
 .nav-links a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 20px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
+  /* Remove padding change */
 }
 
 .dropdown {
@@ -205,7 +218,7 @@ html, body {
 
 
 .contact-btn {
-  background-color: #fab31a;
+  background-color: #fc8d1e;
   color: #000;
   padding: 7px 25px;
   border-radius: 50px;
@@ -222,7 +235,7 @@ html, body {
 
 .contact-btn i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -250,7 +263,7 @@ html, body {
   bottom: -100%;
   border-radius: 50%;
   transition: all ease 0.4s;
-  background-color: #fab31a;
+  background-color: #fc8d1e;
 }
 
 #nav-part2 h4:hover::after {
@@ -272,7 +285,7 @@ html, body {
 
 #nav-part2 i {
   background-color: #000;
-  color: #fab31a;
+  color: #fc8d1e;
   border-radius: 50%;
   padding: 5px;
 }
@@ -317,19 +330,19 @@ html, body {
   font-size: 16px;
   font-weight: 600;
   font-family: "Arimo", sans-serif;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 10px;  /* Normal state me padding fixed rakho */
+  border-radius: 30px; /* Hover ke liye same radius yaha pe de do */
 }
 
 .dropdown-content a:hover {
-  background-color: #fab31a;
-  padding: 8px 10px;
-  border-radius: 30px;
-  color:black;
+  background-color: #fc8d1e;
+  color: black;
 }
 
 .dropdown-content .icon {
   background-color: #333333 ;
-  color: #fab31a;
+  color: #fc8d1e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,7 +378,7 @@ html, body {
 }
 
 .mobile-dropdown-btn:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -379,11 +392,12 @@ html, body {
   padding: 12px 40px; /* indented look */
   font-size: 16px;
   color: #fff;
+  margin-left: 22px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .mobile-dropdown-content a:hover {
-  background: #fab31a;
+  background: #fc8d1e;
   color: #000;
 }
 
@@ -448,6 +462,7 @@ body{
   color: var(--accent);
   text-shadow: 1px 1px 0 rgba(0,0,0,0.03);
   letter-spacing: -0.5px;
+  margin-left: 250px;
 }
 
 .meta{
@@ -455,12 +470,13 @@ body{
   color:var(--muted);
   font-size:0.95rem;
   margin-bottom: 12px;
+  margin-left: 250px;
 }
 
 /* intro paragraph like the image */
 .intro{
   color: #3b3b3b;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 6px 0 18px 0;
   line-height: var(--line-height);
 }
@@ -470,8 +486,13 @@ body{
   margin: 18px 0;
 }
 
+.section p {
+  font-size: 1.1rem;
+  line-height: var(--line-height);
+}
+
 .section-title{
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0 0 10px 0;
   font-weight: 700;
   color: #111;
@@ -485,7 +506,7 @@ body{
   list-style: decimal;
   color: #3b3b3b;
   line-height: var(--line-height);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 /* bullets */
@@ -494,7 +515,7 @@ body{
   padding: 0;
   list-style: disc;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: var(--line-height);
 }
 
@@ -503,7 +524,7 @@ body{
   color: var(--muted);
   font-style: normal;
   line-height: var(--line-height);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 a.link{
@@ -563,7 +584,11 @@ a.link:hover{ text-decoration: underline; }
     padding: 10px;
   }
   .site-title {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    margin-left: 0px;
+  }
+  .meta{
+    margin-left: 0px;
   }
 
 }
@@ -643,21 +668,21 @@ a.link:hover{ text-decoration: underline; }
               </a>
             </li>
             <li>
-              <a href="ui_ux-design.html">
-                <span class="icon"><i class="fas fa-mobile-alt"></i></span>
-                UI/UX Design
-              </a>
-            </li>
-            <li>
               <a href="app_development.html">
                 <span class="icon"><i class="fas fa-code"></i></span>
                 App Development
               </a>
             </li>
             <li>
-              <a href="erp_crm_system.html">
-                <span class="icon"><i class="fas fa-project-diagram"></i></span>
-                ERP & CRM Systems
+              <a href="ui_ux-design.html">
+                <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                UI/UX Design
+              </a>
+            </li>
+            <li>
+              <a href="mvp_to_product.html">
+                <span class="icon"><i class="fas fa-code"></i></span>
+                MVP to Product
               </a>
             </li>
             <li>
@@ -673,13 +698,19 @@ a.link:hover{ text-decoration: underline; }
               </a>
             </li>
             <li>
+              <a href="erp_crm_system.html">
+                <span class="icon"><i class="fas fa-project-diagram"></i></span>
+                ERP & CRM Systems
+              </a>
+            </li>
+            <li>
               <a href="resource_outsource.html">
                 <span class="icon"><i class="fas fa-server"></i></span>
                 Resource-Outsource
               </a>
             </li>
             <li>
-              <a href="custom_doftwaredev.html">
+              <a href="custom_software_development.html">
                 <span class="icon"><i class="fas fa-rocket"></i></span>
                 Custom Software Development
               </a>
@@ -717,13 +748,14 @@ a.link:hover{ text-decoration: underline; }
       </button>
       <div class="mobile-dropdown-content">
         <a href="web_development.html">Web Development</a>
-        <a href="ui_ux-design.html">UI/UX Design</a>
         <a href="app_development.html">App Development</a>
-        <a href="erp_crm_system.html">ERP & CRM Systems</a>
+        <a href="ui_ux-design.html">UI/UX Design</a>
+        <a href="mvp_to_product.html">MVP to Product</a>
         <a href="ai_machinelearning.html">AI & Machine Learning</a>
         <a href="hardware_iot.html">Hardware & IoT Development</a>
+        <a href="erp_crm_system.html">ERP & CRM Systems</a>
         <a href="resource_outsource.html">Resource-Outsource</a>
-        <a href="custom_doftwaredev.html">Custom Software Development</a>
+        <a href="custom_software_development.html">Custom Software Development</a>
       </div>
     </div>
 
